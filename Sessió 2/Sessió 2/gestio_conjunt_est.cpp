@@ -5,7 +5,7 @@ using namespace std;
 #include "Cjt_estudiants.hh"
 
 void arrodonir(Cjt_estudiants& cest) {
-    for (int i = 0; i < cest.mida(); i++) {
+    for (int i = 0; i < cest.mida()+1; i++) {
         
         double nota = ((int) (10.0 * (cest.consultar_iessim(i).consultar_nota() + 0.05))) / 10.0;
         
@@ -37,17 +37,19 @@ int main() {
     
     cout << "Introdueix l'ordre (-1 fins a -5)" << endl;
     
-    while (cin >> op) {
+    while (cin >> op and op != -6) {
    
         
 
-        // Afegir condició si ja existeix l'estudiant
         
         if (op == -1) { //entra un nou estudiant
             Estudiant est;
             cout << "Entra el DNI i la nota:" << endl;
             est.llegir();
-            cest.afegir_estudiant(est);
+            
+            if (cest.existeix_estudiant(est.consultar_DNI())) cout << "L'estudiant ja existeix" << endl;
+            
+            else cest.afegir_estudiant(est);
         }
         
         else if (op == -2) { //consulta la nota d'un estudiant a través del DNI
@@ -69,7 +71,10 @@ int main() {
             Estudiant est;
             cout << "Entra el DNI del estudiant a modificar i la nova nota:" << endl;
             est.llegir();
-            cest.modificar_estudiant(est);
+            
+            if (!cest.existeix_estudiant(est.consultar_DNI())) cout << "No existeix l'estudiant" << endl;
+            
+            else cest.modificar_estudiant(est);
             
             
         }
@@ -78,7 +83,7 @@ int main() {
             arrodonir(cest);
         }
         
-        else { // Escriure tots els elements
+        else if (op == -5){ // Escriure tots els elements
             cest.escriure();
         }
         
