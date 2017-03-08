@@ -4,6 +4,19 @@ using namespace std;
 
 #include "Cjt_estudiants.hh"
 
+void arrodonir(Cjt_estudiants& cest) {
+    for (int i = 0; i < cest.mida(); i++) {
+        
+        double nota = ((int) (10.0 * (cest.consultar_iessim(i).consultar_nota() + 0.05))) / 10.0;
+        
+        Estudiant est (cest.consultar_iessim(i).consultar_DNI());
+        
+        est.afegir_nota(nota);
+        
+        cest.modificar_iessim(i,est);
+
+    }
+}
 
 int main() {
     
@@ -28,6 +41,7 @@ int main() {
    
         
 
+        // Afegir condició si ja existeix l'estudiant
         
         if (op == -1) { //entra un nou estudiant
             Estudiant est;
@@ -41,15 +55,27 @@ int main() {
             int dni;
             cin >> dni;
             
-            cout << cest.consultar_estudiant(dni).consultar_nota() << endl;
+            if (!cest.existeix_estudiant(dni)) cout << "L'estudiant " << dni << " no existeix" << endl;
+            
+            else if (cest.consultar_estudiant(dni).te_nota()) {
+                cout << "L'estudiant " << dni << " té nota " << cest.consultar_estudiant(dni).consultar_nota() << endl;
+            }
+            
+            
+            else cout << "L'estudiant " << dni << " no té nota" << endl;
         }
         
         else if (op == -3) { // modifica la nota d'un estudiant
+            Estudiant est;
+            cout << "Entra el DNI del estudiant a modificar i la nova nota:" << endl;
+            est.llegir();
+            cest.modificar_estudiant(est);
+            
             
         }
         
         else if (op == -4) { // Arrodonir la nota
-            
+            arrodonir(cest);
         }
         
         else { // Escriure tots els elements
