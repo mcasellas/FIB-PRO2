@@ -14,7 +14,7 @@ private:
   // donat un DNI o per posicio en l'ordre
     
   vector<Estudiant> vest;
-  int nest;
+  int nest , imax;
   static const int MAX_NEST = 20;
   /*
     Invariant de la representacio:
@@ -90,6 +90,12 @@ public:
   /* Pre: 1 <= i <= nombre d'estudiants que conte el parametre implicit */
   /* Post: el resultat es l'estudiant i-essim del parametre implicit
      en ordre creixent per DNI */
+    
+    void esborrar_estudiant(int dni);
+    
+    Estudiant estudiant_nota_max() const;
+    
+    
     
   // Lectura i escriptura
 	

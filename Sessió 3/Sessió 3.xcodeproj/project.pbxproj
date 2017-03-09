@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE5E76301E71D7A6002643C4 /* Estudiant.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE5E762E1E71D7A6002643C4 /* Estudiant.cc */; };
-		AE5E76411E71E2A4002643C4 /* 3.1.5 Operacions_static.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE5E763A1E71E114002643C4 /* 3.1.5 Operacions_static.cc */; };
-		AE5E76421E71E2A7002643C4 /* Cjt_estudiants.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE5E763C1E71E274002643C4 /* Cjt_estudiants.cc */; };
+		AE5E764C1E721A9A002643C4 /* 3.2.1 Canvi d'especificacions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE5E764B1E721A9A002643C4 /* 3.2.1 Canvi d'especificacions.cpp */; };
+		AE5E764E1E721ABE002643C4 /* 3.2.2. Millora d'eficiència.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE5E764D1E721ABE002643C4 /* 3.2.2. Millora d'eficiència.cpp */; };
+		AE5E76511E721B17002643C4 /* JUTGE Conjunt d'estudiants amb imax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE5E764F1E721B17002643C4 /* JUTGE Conjunt d'estudiants amb imax.cpp */; };
+		AE5E76561E721DF0002643C4 /* solucio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE5E76541E721DF0002643C4 /* solucio.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,10 @@
 		AE5E763A1E71E114002643C4 /* 3.1.5 Operacions_static.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "3.1.5 Operacions_static.cc"; sourceTree = "<group>"; };
 		AE5E763C1E71E274002643C4 /* Cjt_estudiants.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cjt_estudiants.cc; sourceTree = "<group>"; };
 		AE5E763D1E71E274002643C4 /* Cjt_estudiants.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Cjt_estudiants.hh; sourceTree = "<group>"; };
+		AE5E764B1E721A9A002643C4 /* 3.2.1 Canvi d'especificacions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "3.2.1 Canvi d'especificacions.cpp"; path = "../3.2.1 Canvi d'especificacions.cpp"; sourceTree = "<group>"; };
+		AE5E764D1E721ABE002643C4 /* 3.2.2. Millora d'eficiència.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "3.2.2. Millora d'eficiència.cpp"; path = "../3.2.2. Millora d'eficiència.cpp"; sourceTree = "<group>"; };
+		AE5E764F1E721B17002643C4 /* JUTGE Conjunt d'estudiants amb imax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "JUTGE Conjunt d'estudiants amb imax.cpp"; sourceTree = "<group>"; };
+		AE5E76541E721DF0002643C4 /* solucio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = solucio.cpp; path = "Sessió 3/solucio.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +55,7 @@
 		AE5E761A1E71D64D002643C4 = {
 			isa = PBXGroup;
 			children = (
+				AE5E76571E721F1A002643C4 /* Control */,
 				AE5E762D1E71D764002643C4 /* Includes */,
 				AE5E76251E71D657002643C4 /* Sessió 3 */,
 				AE5E76241E71D656002643C4 /* Products */,
@@ -70,6 +76,9 @@
 				AE5E76321E71D8A5002643C4 /* 3.1.3 Implemetacio.cc */,
 				AE5E76341E71DC8F002643C4 /* 3.1.4 Constructores.cpp */,
 				AE5E763A1E71E114002643C4 /* 3.1.5 Operacions_static.cc */,
+				AE5E764B1E721A9A002643C4 /* 3.2.1 Canvi d'especificacions.cpp */,
+				AE5E764D1E721ABE002643C4 /* 3.2.2. Millora d'eficiència.cpp */,
+				AE5E764F1E721B17002643C4 /* JUTGE Conjunt d'estudiants amb imax.cpp */,
 			);
 			path = "Sessió 3";
 			sourceTree = "<group>";
@@ -84,6 +93,14 @@
 				AE5E762F1E71D7A6002643C4 /* Estudiant.hh */,
 			);
 			name = Includes;
+			sourceTree = "<group>";
+		};
+		AE5E76571E721F1A002643C4 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				AE5E76541E721DF0002643C4 /* solucio.cpp */,
+			);
+			name = Control;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE5E76301E71D7A6002643C4 /* Estudiant.cc in Sources */,
-				AE5E76421E71E2A7002643C4 /* Cjt_estudiants.cc in Sources */,
-				AE5E76411E71E2A4002643C4 /* 3.1.5 Operacions_static.cc in Sources */,
+				AE5E76511E721B17002643C4 /* JUTGE Conjunt d'estudiants amb imax.cpp in Sources */,
+				AE5E764E1E721ABE002643C4 /* 3.2.2. Millora d'eficiència.cpp in Sources */,
+				AE5E76561E721DF0002643C4 /* solucio.cpp in Sources */,
+				AE5E764C1E721A9A002643C4 /* 3.2.1 Canvi d'especificacions.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
