@@ -6,6 +6,13 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AE6F3AF11E7B4D0F003B2C96 /* Cjt_estudiants.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE6F3AE31E7B4CC8003B2C96 /* Cjt_estudiants.cc */; };
+		AE6F3AF21E7B4D0F003B2C96 /* Estudiant.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE6F3AE61E7B4CC8003B2C96 /* Estudiant.cc */; };
+		AE6F3AF31E7B4D0F003B2C96 /* pro2.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE6F3AE91E7B4CC8003B2C96 /* pro2.cc */; };
+		AE6F3AF41E7B4D0F003B2C96 /* solucio.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE6F3AEB1E7B4CC8003B2C96 /* solucio.cc */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		AE3DB9C81E7B1E0600B8F468 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -43,15 +50,16 @@
 		AE6F3AC71E7B3BEB003B2C96 /* PRO2Excepcio.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = PRO2Excepcio.hh; path = X84760/PRO2Excepcio.hh; sourceTree = "<group>"; };
 		AE6F3AC81E7B3BEB003B2C96 /* sortida_correcta.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sortida_correcta.txt; path = X84760/sortida_correcta.txt; sourceTree = "<group>"; };
 		AE6F3ACC1E7B3BFD003B2C96 /* solucio.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = solucio.cc; path = X84760/solucio.cc; sourceTree = "<group>"; };
-		AE6F3AD01E7B49DE003B2C96 /* Cjt_estudiants.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Cjt_estudiants.cc; path = X23571/Cjt_estudiants.cc; sourceTree = "<group>"; };
-		AE6F3AD11E7B49DE003B2C96 /* Cjt_estudiants.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Cjt_estudiants.hh; path = X23571/Cjt_estudiants.hh; sourceTree = "<group>"; };
-		AE6F3AD21E7B49DE003B2C96 /* entrada.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = entrada.txt; path = X23571/entrada.txt; sourceTree = "<group>"; };
-		AE6F3AD31E7B49DE003B2C96 /* Estudiant.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Estudiant.cc; path = X23571/Estudiant.cc; sourceTree = "<group>"; };
-		AE6F3AD41E7B49DE003B2C96 /* Estudiant.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Estudiant.hh; path = X23571/Estudiant.hh; sourceTree = "<group>"; };
-		AE6F3AD51E7B49DE003B2C96 /* llegeixme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = llegeixme.txt; path = X23571/llegeixme.txt; sourceTree = "<group>"; };
-		AE6F3AD61E7B49DE003B2C96 /* pro2.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pro2.cc; path = X23571/pro2.cc; sourceTree = "<group>"; };
-		AE6F3AD71E7B49DE003B2C96 /* PRO2Excepcio.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = PRO2Excepcio.hh; path = X23571/PRO2Excepcio.hh; sourceTree = "<group>"; };
-		AE6F3AD81E7B49DE003B2C96 /* sortida_correcta.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sortida_correcta.txt; path = X23571/sortida_correcta.txt; sourceTree = "<group>"; };
+		AE6F3AE31E7B4CC8003B2C96 /* Cjt_estudiants.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cjt_estudiants.cc; sourceTree = "<group>"; };
+		AE6F3AE41E7B4CC8003B2C96 /* Cjt_estudiants.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Cjt_estudiants.hh; sourceTree = "<group>"; };
+		AE6F3AE51E7B4CC8003B2C96 /* entrada.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = entrada.txt; sourceTree = "<group>"; };
+		AE6F3AE61E7B4CC8003B2C96 /* Estudiant.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Estudiant.cc; sourceTree = "<group>"; };
+		AE6F3AE71E7B4CC8003B2C96 /* Estudiant.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Estudiant.hh; sourceTree = "<group>"; };
+		AE6F3AE81E7B4CC8003B2C96 /* llegeixme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = llegeixme.txt; sourceTree = "<group>"; };
+		AE6F3AE91E7B4CC8003B2C96 /* pro2.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pro2.cc; sourceTree = "<group>"; };
+		AE6F3AEA1E7B4CC8003B2C96 /* PRO2Excepcio.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PRO2Excepcio.hh; sourceTree = "<group>"; };
+		AE6F3AEB1E7B4CC8003B2C96 /* solucio.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = solucio.cc; sourceTree = "<group>"; };
+		AE6F3AEC1E7B4CC8003B2C96 /* sortida_correcta.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sortida_correcta.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +92,9 @@
 		AE3DB9CC1E7B1E0700B8F468 /* Sessió 4 */ = {
 			isa = PBXGroup;
 			children = (
-				AE6F3ACE1E7B4963003B2C96 /* X23571 */,
-				AE6F3A931E7B3B6E003B2C96 /* X84760 */,
+				AE6F3AE21E7B4CC8003B2C96 /* X23571 */,
 				AE6F3A901E7B39DA003B2C96 /*  X26175 */,
+				AE6F3A931E7B3B6E003B2C96 /* X84760 */,
 			);
 			path = "Sessió 4";
 			sourceTree = "<group>";
@@ -129,20 +137,22 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		AE6F3ACE1E7B4963003B2C96 /* X23571 */ = {
+		AE6F3AE21E7B4CC8003B2C96 /* X23571 */ = {
 			isa = PBXGroup;
 			children = (
-				AE6F3AD01E7B49DE003B2C96 /* Cjt_estudiants.cc */,
-				AE6F3AD11E7B49DE003B2C96 /* Cjt_estudiants.hh */,
-				AE6F3AD21E7B49DE003B2C96 /* entrada.txt */,
-				AE6F3AD31E7B49DE003B2C96 /* Estudiant.cc */,
-				AE6F3AD41E7B49DE003B2C96 /* Estudiant.hh */,
-				AE6F3AD51E7B49DE003B2C96 /* llegeixme.txt */,
-				AE6F3AD61E7B49DE003B2C96 /* pro2.cc */,
-				AE6F3AD71E7B49DE003B2C96 /* PRO2Excepcio.hh */,
-				AE6F3AD81E7B49DE003B2C96 /* sortida_correcta.txt */,
+				AE6F3AE31E7B4CC8003B2C96 /* Cjt_estudiants.cc */,
+				AE6F3AE41E7B4CC8003B2C96 /* Cjt_estudiants.hh */,
+				AE6F3AE51E7B4CC8003B2C96 /* entrada.txt */,
+				AE6F3AE61E7B4CC8003B2C96 /* Estudiant.cc */,
+				AE6F3AE71E7B4CC8003B2C96 /* Estudiant.hh */,
+				AE6F3AE81E7B4CC8003B2C96 /* llegeixme.txt */,
+				AE6F3AE91E7B4CC8003B2C96 /* pro2.cc */,
+				AE6F3AEA1E7B4CC8003B2C96 /* PRO2Excepcio.hh */,
+				AE6F3AEB1E7B4CC8003B2C96 /* solucio.cc */,
+				AE6F3AEC1E7B4CC8003B2C96 /* sortida_correcta.txt */,
 			);
 			name = X23571;
+			path = ../X23571;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +212,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6F3AF11E7B4D0F003B2C96 /* Cjt_estudiants.cc in Sources */,
+				AE6F3AF21E7B4D0F003B2C96 /* Estudiant.cc in Sources */,
+				AE6F3AF31E7B4D0F003B2C96 /* pro2.cc in Sources */,
+				AE6F3AF41E7B4D0F003B2C96 /* solucio.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
