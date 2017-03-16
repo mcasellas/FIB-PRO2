@@ -1,0 +1,67 @@
+
+Conjunt:
+Estudiants sense nota 2
+Estudiants amb nota 9
+333 NP
+999 NP
+111 3.22
+555 3.66
+123 4.22
+444 4.22
+345 5.5
+888 7.66
+222 8.66
+234 9.66
+890 10
+
+
+Interval [5, 10]
+345 5.5
+888 7.66
+222 8.66
+234 9.66
+890 10
+
+L'estudiant 444 ja hi era
+
+
+Conjunt:
+Estudiants sense nota 2
+Estudiants amb nota 10
+333 NP
+999 NP
+456 1.06
+111 3.22
+555 3.66
+123 4.22
+444 4.22
+345 5.5
+888 7.66
+222 8.66
+234 9.66
+890 10
+
+
+Interval [10, 10]
+890 10
+899 10
+
+Conjunt:
+Estudiants sense nota 4
+Estudiants amb nota 11
+333 NP
+342 NP
+745 NP
+999 NP
+456 1.06
+111 3.22
+555 3.66
+123 4.22
+444 4.22
+345 5.5
+888 7.66
+222 8.66
+234 9.66
+890 10
+899 10
+

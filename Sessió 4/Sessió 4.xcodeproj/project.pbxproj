@@ -31,6 +31,27 @@
 		AE3DB9DD1E7B203600B8F468 /* PRO2Excepcio.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PRO2Excepcio.hh; sourceTree = "<group>"; };
 		AE3DB9DE1E7B203600B8F468 /* solucio.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = solucio.cc; sourceTree = "<group>"; };
 		AE3DB9DF1E7B203600B8F468 /* sortida_correcta.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sortida_correcta.txt; sourceTree = "<group>"; };
+		AE6F3ABE1E7B3BEB003B2C96 /* Cjt_estudiants.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Cjt_estudiants.cc; path = X84760/Cjt_estudiants.cc; sourceTree = "<group>"; };
+		AE6F3ABF1E7B3BEB003B2C96 /* Cjt_estudiants.cc~ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Cjt_estudiants.cc~"; path = "X84760/Cjt_estudiants.cc~"; sourceTree = "<group>"; };
+		AE6F3AC01E7B3BEB003B2C96 /* Cjt_estudiants.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Cjt_estudiants.hh; path = X84760/Cjt_estudiants.hh; sourceTree = "<group>"; };
+		AE6F3AC11E7B3BEB003B2C96 /* entrada.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = entrada.txt; path = X84760/entrada.txt; sourceTree = "<group>"; };
+		AE6F3AC21E7B3BEB003B2C96 /* Estudiant.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Estudiant.cc; path = X84760/Estudiant.cc; sourceTree = "<group>"; };
+		AE6F3AC31E7B3BEB003B2C96 /* Estudiant.cc~ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Estudiant.cc~"; path = "X84760/Estudiant.cc~"; sourceTree = "<group>"; };
+		AE6F3AC41E7B3BEB003B2C96 /* Estudiant.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Estudiant.hh; path = X84760/Estudiant.hh; sourceTree = "<group>"; };
+		AE6F3AC51E7B3BEB003B2C96 /* llegeixme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = llegeixme.txt; path = X84760/llegeixme.txt; sourceTree = "<group>"; };
+		AE6F3AC61E7B3BEB003B2C96 /* pro2.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pro2.cc; path = X84760/pro2.cc; sourceTree = "<group>"; };
+		AE6F3AC71E7B3BEB003B2C96 /* PRO2Excepcio.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = PRO2Excepcio.hh; path = X84760/PRO2Excepcio.hh; sourceTree = "<group>"; };
+		AE6F3AC81E7B3BEB003B2C96 /* sortida_correcta.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sortida_correcta.txt; path = X84760/sortida_correcta.txt; sourceTree = "<group>"; };
+		AE6F3ACC1E7B3BFD003B2C96 /* solucio.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = solucio.cc; path = X84760/solucio.cc; sourceTree = "<group>"; };
+		AE6F3AD01E7B49DE003B2C96 /* Cjt_estudiants.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Cjt_estudiants.cc; path = X23571/Cjt_estudiants.cc; sourceTree = "<group>"; };
+		AE6F3AD11E7B49DE003B2C96 /* Cjt_estudiants.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Cjt_estudiants.hh; path = X23571/Cjt_estudiants.hh; sourceTree = "<group>"; };
+		AE6F3AD21E7B49DE003B2C96 /* entrada.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = entrada.txt; path = X23571/entrada.txt; sourceTree = "<group>"; };
+		AE6F3AD31E7B49DE003B2C96 /* Estudiant.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Estudiant.cc; path = X23571/Estudiant.cc; sourceTree = "<group>"; };
+		AE6F3AD41E7B49DE003B2C96 /* Estudiant.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Estudiant.hh; path = X23571/Estudiant.hh; sourceTree = "<group>"; };
+		AE6F3AD51E7B49DE003B2C96 /* llegeixme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = llegeixme.txt; path = X23571/llegeixme.txt; sourceTree = "<group>"; };
+		AE6F3AD61E7B49DE003B2C96 /* pro2.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pro2.cc; path = X23571/pro2.cc; sourceTree = "<group>"; };
+		AE6F3AD71E7B49DE003B2C96 /* PRO2Excepcio.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = PRO2Excepcio.hh; path = X23571/PRO2Excepcio.hh; sourceTree = "<group>"; };
+		AE6F3AD81E7B49DE003B2C96 /* sortida_correcta.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sortida_correcta.txt; path = X23571/sortida_correcta.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +84,14 @@
 		AE3DB9CC1E7B1E0700B8F468 /* Sessió 4 */ = {
 			isa = PBXGroup;
 			children = (
-				AE6F3A901E7B39DA003B2C96 /* X84760 */,
+				AE6F3ACE1E7B4963003B2C96 /* X23571 */,
+				AE6F3A931E7B3B6E003B2C96 /* X84760 */,
+				AE6F3A901E7B39DA003B2C96 /*  X26175 */,
 			);
 			path = "Sessió 4";
 			sourceTree = "<group>";
 		};
-		AE6F3A901E7B39DA003B2C96 /* X84760 */ = {
+		AE6F3A901E7B39DA003B2C96 /*  X26175 */ = {
 			isa = PBXGroup;
 			children = (
 				AE3DB9D51E7B203600B8F468 /* Cjt_estudiants.cc */,
@@ -83,7 +106,43 @@
 				AE3DB9DE1E7B203600B8F468 /* solucio.cc */,
 				AE3DB9DF1E7B203600B8F468 /* sortida_correcta.txt */,
 			);
+			name = " X26175";
+			sourceTree = "<group>";
+		};
+		AE6F3A931E7B3B6E003B2C96 /* X84760 */ = {
+			isa = PBXGroup;
+			children = (
+				AE6F3ABE1E7B3BEB003B2C96 /* Cjt_estudiants.cc */,
+				AE6F3ABF1E7B3BEB003B2C96 /* Cjt_estudiants.cc~ */,
+				AE6F3AC01E7B3BEB003B2C96 /* Cjt_estudiants.hh */,
+				AE6F3AC11E7B3BEB003B2C96 /* entrada.txt */,
+				AE6F3AC21E7B3BEB003B2C96 /* Estudiant.cc */,
+				AE6F3AC31E7B3BEB003B2C96 /* Estudiant.cc~ */,
+				AE6F3AC41E7B3BEB003B2C96 /* Estudiant.hh */,
+				AE6F3AC51E7B3BEB003B2C96 /* llegeixme.txt */,
+				AE6F3AC61E7B3BEB003B2C96 /* pro2.cc */,
+				AE6F3AC71E7B3BEB003B2C96 /* PRO2Excepcio.hh */,
+				AE6F3AC81E7B3BEB003B2C96 /* sortida_correcta.txt */,
+				AE6F3ACC1E7B3BFD003B2C96 /* solucio.cc */,
+			);
 			name = X84760;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		AE6F3ACE1E7B4963003B2C96 /* X23571 */ = {
+			isa = PBXGroup;
+			children = (
+				AE6F3AD01E7B49DE003B2C96 /* Cjt_estudiants.cc */,
+				AE6F3AD11E7B49DE003B2C96 /* Cjt_estudiants.hh */,
+				AE6F3AD21E7B49DE003B2C96 /* entrada.txt */,
+				AE6F3AD31E7B49DE003B2C96 /* Estudiant.cc */,
+				AE6F3AD41E7B49DE003B2C96 /* Estudiant.hh */,
+				AE6F3AD51E7B49DE003B2C96 /* llegeixme.txt */,
+				AE6F3AD61E7B49DE003B2C96 /* pro2.cc */,
+				AE6F3AD71E7B49DE003B2C96 /* PRO2Excepcio.hh */,
+				AE6F3AD81E7B49DE003B2C96 /* sortida_correcta.txt */,
+			);
+			name = X23571;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
