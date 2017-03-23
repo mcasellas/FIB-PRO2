@@ -34,7 +34,7 @@ int Cjt_estudiants::mida_maxima()
 {
   return MAX_NEST;
 }
- 8
+ 
 int Cjt_estudiants::nombre_est_interval(int i) const
 {
   return intervals[i];

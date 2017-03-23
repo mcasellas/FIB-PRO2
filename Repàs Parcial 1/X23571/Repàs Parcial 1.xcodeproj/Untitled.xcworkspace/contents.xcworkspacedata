@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:.."
+      name = "X23571">
+      <FileRef
+         location = "group:../solucio.cc">
+      </FileRef>
+      <FileRef
+         location = "group:../Cjt_estudiants.cc">
+      </FileRef>
+      <FileRef
+         location = "group:../Cjt_estudiants.hh">
+      </FileRef>
+      <FileRef
+         location = "group:../entrada.txt">
+      </FileRef>
+      <FileRef
+         location = "group:../Estudiant.cc">
+      </FileRef>
+      <FileRef
+         location = "group:../Estudiant.hh">
+      </FileRef>
+      <FileRef
+         location = "group:../llegeixme.txt">
+      </FileRef>
+      <FileRef
+         location = "group:../pro2.cc">
+      </FileRef>
+      <FileRef
+         location = "group:../PRO2Excepcio.hh">
+      </FileRef>
+      <FileRef
+         location = "group:../sortida_correcta.txt">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "container:">
+   </FileRef>
+</Workspace>
