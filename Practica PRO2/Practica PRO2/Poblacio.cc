@@ -6,8 +6,17 @@ Poblacio::Poblacio(){
     
 }
 
-Individu Poblacio::buscar_individu(string nom){
-    return poble[nom];
+Individu Poblacio::buscar_individu(string nom, bool& trobat){
+    
+    map<string,Individu>::const_iterator it;
+    
+    it = poble.find(nom);
+    
+    if (it == poble.end()) trobat = false;
+    
+    else return (*it).second;
+    
+    return Individu();
 }
 
 bool Poblacio::comprovar_individu(string nom){
@@ -26,8 +35,20 @@ void Poblacio::afegir_individu(string nom, const Individu& p){
 
 
 
-void Poblacio::escriure_arbre() const{
+void Poblacio::escriure_arbre(string nom) const{
+    cout << nom << " ";
+    
+    queue<string> cua;
 
+    map<string,Individu>::const_iterator it;
+    
+    it = poble.find(nom);
+}
+
+void Poblacio::buscar_descendents(queue<string>& cua, string nom){
+    Individu ind;
+    
+    
 }
 
 

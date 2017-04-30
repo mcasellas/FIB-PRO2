@@ -39,7 +39,7 @@ public:
      \pre El paràmetre explicit conté el parell de cromosomes del pare, de la mare, el seleccionat pel pare, el de la mare i el punt de tall.
      \post Es retorna el parell de cromosomes corresponent al fill.
      */
-    void creuament(Parell_cromosomes pare, Parell_cromosomes mare, int npare, int nmare, int k);
+    void creuament(Parell_cromosomes pare, Parell_cromosomes mare, int npare, int nmare, int k, int lo);
 
     
     

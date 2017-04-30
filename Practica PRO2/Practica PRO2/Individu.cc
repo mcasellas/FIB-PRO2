@@ -13,6 +13,7 @@ void Individu::reproduir(Individu indpare, Individu indmare, string npare, strin
         int cromo_mare, cromo_pare, punt_tall;
         
         for (int i = 0; i <= esp.consultar_n(); i++) { // Cromosoma a cromosoma
+  
             cin >> cromo_mare >> cromo_pare >> punt_tall;
             
             if (i == 0) {
@@ -22,7 +23,9 @@ void Individu::reproduir(Individu indpare, Individu indmare, string npare, strin
             
             Parell_cromosomes par_result;
             
-            par_result.creuament(indpare.consultar_parell_cromosomes(i), indmare.consultar_parell_cromosomes(i), cromo_pare, cromo_mare, punt_tall);
+      
+            
+            par_result.creuament(indpare.consultar_parell_cromosomes(i), indmare.consultar_parell_cromosomes(i), cromo_pare, cromo_mare, punt_tall, esp.consultar_ln(i));
             
             adn.push_back(par_result);
         }

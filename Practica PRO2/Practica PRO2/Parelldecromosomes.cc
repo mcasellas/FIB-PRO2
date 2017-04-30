@@ -6,7 +6,7 @@ Parell_cromosomes::Parell_cromosomes(){
     
 }
 
-void Parell_cromosomes::creuament(Parell_cromosomes pare, Parell_cromosomes mare, int npare, int nmare, int k){
+void Parell_cromosomes::creuament(Parell_cromosomes pare, Parell_cromosomes mare, int npare, int nmare, int k, int lo){
     vector<int> primerc;
     vector<int> segonc;
     
@@ -16,14 +16,28 @@ void Parell_cromosomes::creuament(Parell_cromosomes pare, Parell_cromosomes mare
     primerc = mare.consultar_cromosoma(nmare);
     segonc = pare.consultar_cromosoma(npare);
     
-    for (int i = 0; i < segonc.size(); i++){
+    int i;
+    
+    for (i = 0; i < lo; i++){
         if (i < k) {
             resultat1.push_back(primerc[i]);
             resultat2.push_back(segonc[i]);
         }
         else {
-            resultat1.push_back(segonc[i]);
-            resultat2.push_back(primerc[i]);
+                resultat1.push_back(segonc[i]);
+                resultat2.push_back(primerc[i]);
+        }
+    }
+    if (i >= lo){
+        int aux = i;
+        while (primerc.size() != resultat1.size()){
+            resultat1.push_back(primerc[i]);
+            ++i;
+        }
+        i = aux;
+        while (segonc.size() != resultat2.size()){
+            resultat2.push_back(segonc[i]);
+            ++i;
         }
     }
     
