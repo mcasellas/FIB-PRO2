@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AEDAE69F1E8DAD000017BC45 /* Estudiant.cc in Sources */ = {isa = PBXBuildFile; fileRef = AEDAE69B1E8DAD000017BC45 /* Estudiant.cc */; };
-		AEDAE6A01E8DAD000017BC45 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = AEDAE69D1E8DAD000017BC45 /* Makefile */; };
-		AEDAE6A31E8DAD200017BC45 /* ArbIOest.cc in Sources */ = {isa = PBXBuildFile; fileRef = AEDAE6A11E8DAD200017BC45 /* ArbIOest.cc */; };
-		AEDAE6A51E8DAD310017BC45 /* program.cc in Sources */ = {isa = PBXBuildFile; fileRef = AEDAE6A41E8DAD310017BC45 /* program.cc */; };
+		AEF650F51EAFFCC70017819E /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = AEF650F11EAFFCC70017819E /* main.cc */; };
+		AEF650F61EAFFCC70017819E /* Poblacio.cc in Sources */ = {isa = PBXBuildFile; fileRef = AEF650F31EAFFCC70017819E /* Poblacio.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,14 +25,16 @@
 
 /* Begin PBXFileReference section */
 		AEDAE6841E8D4BAE0017BC45 /* PRO2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PRO2; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEDAE69A1E8DAD000017BC45 /* Arbre.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Arbre.hh; path = "../../Sessió 6/X84593/Arbre.hh"; sourceTree = "<group>"; };
-		AEDAE69B1E8DAD000017BC45 /* Estudiant.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Estudiant.cc; path = "../../Sessió 6/X84593/Estudiant.cc"; sourceTree = "<group>"; };
-		AEDAE69C1E8DAD000017BC45 /* Estudiant.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Estudiant.hh; path = "../../Sessió 6/X84593/Estudiant.hh"; sourceTree = "<group>"; };
-		AEDAE69D1E8DAD000017BC45 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = "../../Sessió 6/X84593/Makefile"; sourceTree = "<group>"; };
-		AEDAE69E1E8DAD000017BC45 /* PRO2Excepcio.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = PRO2Excepcio.hh; path = "../../Sessió 6/X84593/PRO2Excepcio.hh"; sourceTree = "<group>"; };
-		AEDAE6A11E8DAD200017BC45 /* ArbIOest.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ArbIOest.cc; path = "../../Sessió 6/X84593/ArbIOest.cc"; sourceTree = "<group>"; };
-		AEDAE6A21E8DAD200017BC45 /* ArbIOest.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ArbIOest.hh; path = "../../Sessió 6/X84593/ArbIOest.hh"; sourceTree = "<group>"; };
-		AEDAE6A41E8DAD310017BC45 /* program.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = program.cc; path = "../../Sessió 6/X84593/program.cc"; sourceTree = "<group>"; };
+		AEF650DF1EAFECD50017819E /* Cjt_estudiants.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Cjt_estudiants.cc; path = "../Sessió 2/Sessió 2/Cjt_estudiants.cc"; sourceTree = "<group>"; };
+		AEF650E01EAFECD50017819E /* Cjt_estudiants.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Cjt_estudiants.hh; path = "../Sessió 2/Sessió 2/Cjt_estudiants.hh"; sourceTree = "<group>"; };
+		AEF650E11EAFECD50017819E /* estudiant.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = estudiant.cc; path = "../Sessió 2/Sessió 2/estudiant.cc"; sourceTree = "<group>"; };
+		AEF650E21EAFECD50017819E /* estudiant.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = estudiant.hh; path = "../Sessió 2/Sessió 2/estudiant.hh"; sourceTree = "<group>"; };
+		AEF650EF1EAFFCC70017819E /* Especie.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Especie.hh; path = "../../../../../Google Drive/Universitat/PRO2/Pràctica/Especie.hh"; sourceTree = "<group>"; };
+		AEF650F01EAFFCC70017819E /* Individu.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Individu.hh; path = "../../../../../Google Drive/Universitat/PRO2/Pràctica/Individu.hh"; sourceTree = "<group>"; };
+		AEF650F11EAFFCC70017819E /* main.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cc; path = "../../../../../Google Drive/Universitat/PRO2/Pràctica/main.cc"; sourceTree = "<group>"; };
+		AEF650F21EAFFCC70017819E /* Parelldecromosomes.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Parelldecromosomes.hh; path = "../../../../../Google Drive/Universitat/PRO2/Pràctica/Parelldecromosomes.hh"; sourceTree = "<group>"; };
+		AEF650F31EAFFCC70017819E /* Poblacio.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Poblacio.cc; path = "../../../../../Google Drive/Universitat/PRO2/Pràctica/Poblacio.cc"; sourceTree = "<group>"; };
+		AEF650F41EAFFCC70017819E /* Poblacio.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Poblacio.hh; path = "../../../../../Google Drive/Universitat/PRO2/Pràctica/Poblacio.hh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +51,7 @@
 		AEDAE67B1E8D4BAD0017BC45 = {
 			isa = PBXGroup;
 			children = (
+				AEF650DE1EAFEC030017819E /* Exemple S8 */,
 				AEDAE6861E8D4BAE0017BC45 /* PRO2 */,
 				AEDAE6851E8D4BAE0017BC45 /* Products */,
 			);
@@ -67,16 +68,25 @@
 		AEDAE6861E8D4BAE0017BC45 /* PRO2 */ = {
 			isa = PBXGroup;
 			children = (
-				AEDAE6A41E8DAD310017BC45 /* program.cc */,
-				AEDAE6A11E8DAD200017BC45 /* ArbIOest.cc */,
-				AEDAE6A21E8DAD200017BC45 /* ArbIOest.hh */,
-				AEDAE69A1E8DAD000017BC45 /* Arbre.hh */,
-				AEDAE69B1E8DAD000017BC45 /* Estudiant.cc */,
-				AEDAE69C1E8DAD000017BC45 /* Estudiant.hh */,
-				AEDAE69D1E8DAD000017BC45 /* Makefile */,
-				AEDAE69E1E8DAD000017BC45 /* PRO2Excepcio.hh */,
+				AEF650F11EAFFCC70017819E /* main.cc */,
+				AEF650EF1EAFFCC70017819E /* Especie.hh */,
+				AEF650F41EAFFCC70017819E /* Poblacio.hh */,
+				AEF650F31EAFFCC70017819E /* Poblacio.cc */,
+				AEF650F01EAFFCC70017819E /* Individu.hh */,
+				AEF650F21EAFFCC70017819E /* Parelldecromosomes.hh */,
 			);
 			path = PRO2;
+			sourceTree = "<group>";
+		};
+		AEF650DE1EAFEC030017819E /* Exemple S8 */ = {
+			isa = PBXGroup;
+			children = (
+				AEF650DF1EAFECD50017819E /* Cjt_estudiants.cc */,
+				AEF650E01EAFECD50017819E /* Cjt_estudiants.hh */,
+				AEF650E11EAFECD50017819E /* estudiant.cc */,
+				AEF650E21EAFECD50017819E /* estudiant.hh */,
+			);
+			name = "Exemple S8";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,10 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEDAE6A51E8DAD310017BC45 /* program.cc in Sources */,
-				AEDAE6A01E8DAD000017BC45 /* Makefile in Sources */,
-				AEDAE69F1E8DAD000017BC45 /* Estudiant.cc in Sources */,
-				AEDAE6A31E8DAD200017BC45 /* ArbIOest.cc in Sources */,
+				AEF650F61EAFFCC70017819E /* Poblacio.cc in Sources */,
+				AEF650F51EAFFCC70017819E /* main.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +274,7 @@
 				AEDAE68D1E8D4BAE0017BC45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

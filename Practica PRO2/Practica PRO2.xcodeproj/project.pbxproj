@@ -1,0 +1,278 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE837A041EB60B2300903BDC /* Especie.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE8379FB1EB60B2300903BDC /* Especie.cc */; };
+		AE837A051EB60B2300903BDC /* Individu.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE8379FD1EB60B2300903BDC /* Individu.cc */; };
+		AE837A061EB60B2300903BDC /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE8379FF1EB60B2300903BDC /* main.cc */; };
+		AE837A071EB60B2300903BDC /* Parelldecromosomes.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE837A011EB60B2300903BDC /* Parelldecromosomes.cc */; };
+		AE837A081EB60B2300903BDC /* Poblacio.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE837A021EB60B2300903BDC /* Poblacio.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AEF650FE1EAFFD900017819E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AE8379FB1EB60B2300903BDC /* Especie.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Especie.cc; path = "../../../../../Google Drive/Universitat/PRO2/Pràctica/Practica/Especie.cc"; sourceTree = "<group>"; };
+		AE8379FC1EB60B2300903BDC /* Especie.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Especie.hh; path = "../../../../../Google Drive/Universitat/PRO2/Pràctica/Practica/Especie.hh"; sourceTree = "<group>"; };
+		AE8379FD1EB60B2300903BDC /* Individu.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Individu.cc; path = "../../../../../Google Drive/Universitat/PRO2/Pràctica/Practica/Individu.cc"; sourceTree = "<group>"; };
+		AE8379FE1EB60B2300903BDC /* Individu.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Individu.hh; path = "../../../../../Google Drive/Universitat/PRO2/Pràctica/Practica/Individu.hh"; sourceTree = "<group>"; };
+		AE8379FF1EB60B2300903BDC /* main.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cc; path = "../../../../../Google Drive/Universitat/PRO2/Pràctica/Practica/main.cc"; sourceTree = "<group>"; };
+		AE837A001EB60B2300903BDC /* Parellcromosomes.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Parellcromosomes.hh; path = "../../../../../Google Drive/Universitat/PRO2/Pràctica/Practica/Parellcromosomes.hh"; sourceTree = "<group>"; };
+		AE837A011EB60B2300903BDC /* Parelldecromosomes.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Parelldecromosomes.cc; path = "../../../../../Google Drive/Universitat/PRO2/Pràctica/Practica/Parelldecromosomes.cc"; sourceTree = "<group>"; };
+		AE837A021EB60B2300903BDC /* Poblacio.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Poblacio.cc; path = "../../../../../Google Drive/Universitat/PRO2/Pràctica/Practica/Poblacio.cc"; sourceTree = "<group>"; };
+		AE837A031EB60B2300903BDC /* Poblacio.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Poblacio.hh; path = "../../../../../Google Drive/Universitat/PRO2/Pràctica/Practica/Poblacio.hh"; sourceTree = "<group>"; };
+		AEF651001EAFFD900017819E /* Practica PRO2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Practica PRO2"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEF650FD1EAFFD900017819E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEF650F71EAFFD900017819E = {
+			isa = PBXGroup;
+			children = (
+				AEF651021EAFFD900017819E /* Practica PRO2 */,
+				AEF651011EAFFD900017819E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEF651011EAFFD900017819E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEF651001EAFFD900017819E /* Practica PRO2 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEF651021EAFFD900017819E /* Practica PRO2 */ = {
+			isa = PBXGroup;
+			children = (
+				AE8379FF1EB60B2300903BDC /* main.cc */,
+				AE8379FB1EB60B2300903BDC /* Especie.cc */,
+				AE8379FC1EB60B2300903BDC /* Especie.hh */,
+				AE837A021EB60B2300903BDC /* Poblacio.cc */,
+				AE837A031EB60B2300903BDC /* Poblacio.hh */,
+				AE8379FD1EB60B2300903BDC /* Individu.cc */,
+				AE8379FE1EB60B2300903BDC /* Individu.hh */,
+				AE837A011EB60B2300903BDC /* Parelldecromosomes.cc */,
+				AE837A001EB60B2300903BDC /* Parellcromosomes.hh */,
+			);
+			path = "Practica PRO2";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEF650FF1EAFFD900017819E /* Practica PRO2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEF651071EAFFD900017819E /* Build configuration list for PBXNativeTarget "Practica PRO2" */;
+			buildPhases = (
+				AEF650FC1EAFFD900017819E /* Sources */,
+				AEF650FD1EAFFD900017819E /* Frameworks */,
+				AEF650FE1EAFFD900017819E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Practica PRO2";
+			productName = "Practica PRO2";
+			productReference = AEF651001EAFFD900017819E /* Practica PRO2 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEF650F81EAFFD900017819E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Marc Casellas";
+				TargetAttributes = {
+					AEF650FF1EAFFD900017819E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AEF650FB1EAFFD900017819E /* Build configuration list for PBXProject "Practica PRO2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AEF650F71EAFFD900017819E;
+			productRefGroup = AEF651011EAFFD900017819E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEF650FF1EAFFD900017819E /* Practica PRO2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEF650FC1EAFFD900017819E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE837A061EB60B2300903BDC /* main.cc in Sources */,
+				AE837A071EB60B2300903BDC /* Parelldecromosomes.cc in Sources */,
+				AE837A041EB60B2300903BDC /* Especie.cc in Sources */,
+				AE837A051EB60B2300903BDC /* Individu.cc in Sources */,
+				AE837A081EB60B2300903BDC /* Poblacio.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AEF651051EAFFD900017819E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AEF651061EAFFD900017819E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AEF651081EAFFD900017819E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AEF651091EAFFD900017819E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEF650FB1EAFFD900017819E /* Build configuration list for PBXProject "Practica PRO2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEF651051EAFFD900017819E /* Debug */,
+				AEF651061EAFFD900017819E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEF651071EAFFD900017819E /* Build configuration list for PBXNativeTarget "Practica PRO2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEF651081EAFFD900017819E /* Debug */,
+				AEF651091EAFFD900017819E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AEF650F81EAFFD900017819E /* Project object */;
+}
