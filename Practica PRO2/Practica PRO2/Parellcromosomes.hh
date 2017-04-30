@@ -54,6 +54,8 @@ public:
     void llegir_cromosomes_sexuals(int llargada_lx, int llargada_ly, char sexe);
 
     void escriure_cromosoma(int num) const;
+    
+    vector<int> consultar_cromosoma(int num) const;
 
 
 private:

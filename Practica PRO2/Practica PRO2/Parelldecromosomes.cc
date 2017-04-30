@@ -6,10 +6,30 @@ Parell_cromosomes::Parell_cromosomes(){
     
 }
 
-Parell_cromosomes creuament(Parell_cromosomes pare, Parell_cromosomes mare, int npare, int nmare, int k){
-
+void Parell_cromosomes::creuament(Parell_cromosomes pare, Parell_cromosomes mare, int npare, int nmare, int k){
+    vector<int> primerc;
+    vector<int> segonc;
     
-    for (int i = 0; i < )
+    vector<int> resultat1;
+    vector<int> resultat2;
+    
+    primerc = mare.consultar_cromosoma(nmare);
+    segonc = pare.consultar_cromosoma(npare);
+    
+    for (int i = 0; i < segonc.size(); i++){
+        if (i < k) {
+            resultat1.push_back(primerc[i]);
+            resultat2.push_back(segonc[i]);
+        }
+        else {
+            resultat1.push_back(segonc[i]);
+            resultat2.push_back(primerc[i]);
+        }
+    }
+    
+    c1 = resultat1;
+    c2 = resultat2;
+    
 }
 
 
@@ -58,3 +78,9 @@ void Parell_cromosomes::escriure_cromosoma(int num) const{
         cout << endl;
     }
 }
+
+vector<int> Parell_cromosomes::consultar_cromosoma(int num) const{
+    if (num == 0) return c1;
+    else return c2;
+}
+

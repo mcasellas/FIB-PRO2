@@ -6,14 +6,12 @@ Individu::Individu(){
     
 }
 
-void Individu::reproduir(Individu pare, Individu mare, string npare, string nmare, string nfill, Especie esp){
-    if (pare.consultar_sexe() != 'Y' or mare.consultar_sexe() != 'X') cout << "no es posible reproduccion" << endl;
+void Individu::reproduir(Individu indpare, Individu indmare, string npare, string nmare, string nfill, Especie esp){
+    if (indpare.consultar_sexe() != 'Y' or indmare.consultar_sexe() != 'X') cout << "no es posible reproduccion" << endl;
         
     else {
-        
-        
-        
         int cromo_mare, cromo_pare, punt_tall;
+        
         for (int i = 0; i <= esp.consultar_n(); i++) { // Cromosoma a cromosoma
             cin >> cromo_mare >> cromo_pare >> punt_tall;
             
@@ -22,25 +20,27 @@ void Individu::reproduir(Individu pare, Individu mare, string npare, string nmar
                 else sexe = 'X';
             }
             
-            
             Parell_cromosomes par_result;
             
-            par_result.creuament(pare.consultar_parell_cromosomes(i), mare.consultar_parell_cromosomes(i), cromo_pare, cromo_mare, punt_tall);
+            par_result.creuament(indpare.consultar_parell_cromosomes(i), indmare.consultar_parell_cromosomes(i), cromo_pare, cromo_mare, punt_tall);
             
             adn.push_back(par_result);
         }
     }
-    
 
-    
+    pare = npare;
+    mare = nmare;
 }
+
 
 char Individu::consultar_sexe() const{
     return sexe;
 }
 
 
-Parell_cromosomes consultar_parell_cromosomes(int i);
+Parell_cromosomes Individu::consultar_parell_cromosomes(int i){
+    return adn[i];
+}
 
 
 string Individu::consultar_pare() const{

@@ -83,7 +83,6 @@ public:
 
     void llegir_individu(Especie esp);
 
-    
    
 
 
