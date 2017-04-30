@@ -39,14 +39,9 @@ public:
      \pre El paràmetre explicit conté el parell de cromosomes del pare, de la mare, el seleccionat pel pare, el de la mare i el punt de tall.
      \post Es retorna el parell de cromosomes corresponent al fill.
      */
-    void creuament(Parell_cromosomes pare, Parell_cromosomes mare, int npare, int nmare, int k);
+    void creuament(Parell_cromosomes pare, Parell_cromosomes mare, int npare, int nmare, int k, int lo);
 
-    /** @brief Consultora d'un gen
-     
-     \pre El paràmetre implicit està inicialitzat, explícit conté el número de cromosoma corresponent (1 o 2) i el gen que cal retornar.
-     \post Retorna el valor d'un gen concret.
-     */
-    int consultar_gen(int numero, int gen) const;
+    
     
     /** @brief Lectora del material genètic.
      
@@ -58,7 +53,9 @@ public:
     
     void llegir_cromosomes_sexuals(int llargada_lx, int llargada_ly, char sexe);
 
+    void escriure_cromosoma(int num) const;
     
+    vector<int> consultar_cromosoma(int num) const;
 
 
 private:

@@ -52,18 +52,26 @@ int main(){
         }
 
         else if (accio == "reproduccion_sexual"){
+            cerr << "Introdueix nom de la mare, pare i fill" << endl;
             string nmare, npare, nfill;
             cin >> nmare >> npare >> nfill;
             
             Individu pare, mare, fill;
             
-            mare = poble.buscar_individu(nmare);
-            pare = poble.buscar_individu(npare);
+            bool trobat = true;
             
-            // fill.reproduir(pare, mare, npare, nmare, nfill, esp);
+            mare = poble.buscar_individu(nmare, trobat);
+            pare = poble.buscar_individu(npare, trobat);
+            
+            if (trobat) {
+                
+            fill.reproduir(pare, mare, npare, nmare, nfill, esp);
             
 
             poble.afegir_individu(nfill, fill);
+            }
+            
+            else cout << "no es posible reproduccion" << endl;
         }
 
         else if (accio == "escribir_arbol_genealogico"){
@@ -71,7 +79,9 @@ int main(){
         }
 
         else if (accio == "completar_arbol_genealogico"){
-            poble.completar_arbre();
+            string nom;
+            cin >> nom;
+            poble.completar_arbre(nom);
         }
 
         else if (accio == "escribir_poblacion"){
@@ -83,9 +93,11 @@ int main(){
             string nom;
             cin >> nom;
             
-            ind = poble.buscar_individu(nom, esp);
+            bool trobat = true;
             
-            ind.escriure_genotip();
+            ind = poble.buscar_individu(nom, trobat);
+            
+            if (trobat) ind.escriure_genotip(esp);
         }
     }
 

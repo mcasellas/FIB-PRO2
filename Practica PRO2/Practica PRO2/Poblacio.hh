@@ -8,6 +8,7 @@
 #include "Individu.hh"
 
 #ifndef NO_DIAGRAM
+#include <queue>
 #include <iostream>
 #include <map>
 
@@ -37,7 +38,7 @@ public:
         \pre El paràmetre implicit està inicialitzat, l'explícit conté el nom de l'individu a buscar.
         \post Retorna l'individu que correspon al nom.
     */
-    Individu buscar_individu(string nom);
+    Individu buscar_individu(string nom, bool& trobat);
     
     /** @brief Inclosora de la població.
      
@@ -56,7 +57,11 @@ public:
         \pre El paràmetre implicit està inicialitzat. Es prepara pel canal d'entrada el nom de l'individu que serà l'arrel de l'arbre.
         \post S'imprimeix pel canal d'entrada l'arbre complet amb arrel establerta a l'individu.
     */
-    void escriure_arbre() const;
+    void escriure_arbre(string nom) const;
+    
+    
+    void buscar_descendents(queue<string>& cua, string nom);
+    
     
     /** @brief Completadora d'arbres.
      
