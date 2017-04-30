@@ -6,18 +6,12 @@ Parell_cromosomes::Parell_cromosomes(){
     
 }
 
-/** Parell_cromosomes creuament(Parell_cromosomes pare, Parell_cromosomes mare, int npare, int nmare, int k){
-    
-} **/
+Parell_cromosomes creuament(Parell_cromosomes pare, Parell_cromosomes mare, int npare, int nmare, int k){
 
-int Parell_cromosomes::consultar_gen(int numero, int gen) const{
-    if (numero == 1) {
-        return c1[gen];
-    }
-    else {
-        return c2[gen];
-    }
+    
+    for (int i = 0; i < )
 }
+
 
 void Parell_cromosomes::llegir_cromosomes_no_sexuals(int llargada_parell){
     int alel;
@@ -44,5 +38,23 @@ void Parell_cromosomes::llegir_cromosomes_sexuals(int primer, int segon, char se
     for (int i = 0; i < segon; i++){
         cin >> alel;
         c2.push_back(alel);
+    }
+}
+
+void Parell_cromosomes::escriure_cromosoma(int num) const{
+    if (num == 1) {
+        for (int i = 0; i < c1.size(); i++) {
+            cout << c1[i];
+            if (i != c1.size()) cout << " ";
+        }
+        
+        cout << endl;
+    }
+    else {
+        for (int i = 0; i < c2.size(); i++) {
+            cout << c2[i];
+            if (i != c2.size()) cout << " ";
+        }
+        cout << endl;
     }
 }

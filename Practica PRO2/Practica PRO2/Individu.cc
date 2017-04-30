@@ -6,9 +6,34 @@ Individu::Individu(){
     
 }
 
-/**void reproduir(Individu pare, Individu mare, string npare, string nmare, string nfill, Especie esp){
+void Individu::reproduir(Individu pare, Individu mare, string npare, string nmare, string nfill, Especie esp){
+    if (pare.consultar_sexe() != 'Y' or mare.consultar_sexe() != 'X') cout << "no es posible reproduccion" << endl;
+        
+    else {
+        
+        
+        
+        int cromo_mare, cromo_pare, punt_tall;
+        for (int i = 0; i <= esp.consultar_n(); i++) { // Cromosoma a cromosoma
+            cin >> cromo_mare >> cromo_pare >> punt_tall;
+            
+            if (i == 0) {
+                if (cromo_pare == 1) sexe = 'Y';
+                else sexe = 'X';
+            }
+            
+            
+            Parell_cromosomes par_result;
+            
+            par_result.creuament(pare.consultar_parell_cromosomes(i), mare.consultar_parell_cromosomes(i), cromo_pare, cromo_mare, punt_tall);
+            
+            adn.push_back(par_result);
+        }
+    }
     
-}**/
+
+    
+}
 
 char Individu::consultar_sexe() const{
     return sexe;
@@ -29,18 +54,23 @@ string Individu::consultar_mare() const{
 
 void Individu::escriure_genotip(Especie esp) const{
     for (int i = 0; i < adn.size(); i++) {
-        if (i == 0){
+        if (i == 0){ // Escrivim primer els cromosomes sexuals
             cout << "X: ";
-            for (int j = 0; i < adn[i].size(); i++) {
-                cout << adn[i].consultar_gen(1, j);
-            }
+            adn[i].escriure_cromosoma(1);
+        
+            cout << "Y: ";
+            adn[i].escriure_cromosoma(2);
+        }
+        
+        else {
+            cout << i << ".1: ";
+            adn[i].escriure_cromosoma(1);
             
-            cout << "X: ";
-            for (int j = 0; i < adn[i].size(); i++) {
-                cout << adn[i].consultar_gen(2, j);
-            }
+            cout << i << ".2: ";
+            adn[i].escriure_cromosoma(2);
         }
     }
+    cout << endl;
 }
 
 

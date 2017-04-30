@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE837A121EB62CDD00903BDC /* Especie.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE837A091EB62CDD00903BDC /* Especie.cc */; };
-		AE837A131EB62CDD00903BDC /* Individu.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE837A0B1EB62CDD00903BDC /* Individu.cc */; };
-		AE837A141EB62CDD00903BDC /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE837A0D1EB62CDD00903BDC /* main.cc */; };
-		AE837A151EB62CDD00903BDC /* Parelldecromosomes.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE837A0F1EB62CDD00903BDC /* Parelldecromosomes.cc */; };
-		AE837A161EB62CDD00903BDC /* Poblacio.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE837A101EB62CDD00903BDC /* Poblacio.cc */; };
+		AE837A201EB62D4D00903BDC /* Especie.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE837A171EB62D4D00903BDC /* Especie.cc */; };
+		AE837A211EB62D4D00903BDC /* Individu.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE837A191EB62D4D00903BDC /* Individu.cc */; };
+		AE837A221EB62D4D00903BDC /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE837A1B1EB62D4D00903BDC /* main.cc */; };
+		AE837A231EB62D4D00903BDC /* Parelldecromosomes.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE837A1D1EB62D4D00903BDC /* Parelldecromosomes.cc */; };
+		AE837A241EB62D4D00903BDC /* Poblacio.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE837A1E1EB62D4D00903BDC /* Poblacio.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,15 +27,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AE837A091EB62CDD00903BDC /* Especie.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Especie.cc; path = "../../Pràctica/Especie.cc"; sourceTree = "<group>"; };
-		AE837A0A1EB62CDD00903BDC /* Especie.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Especie.hh; path = "../../Pràctica/Especie.hh"; sourceTree = "<group>"; };
-		AE837A0B1EB62CDD00903BDC /* Individu.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Individu.cc; path = "../../Pràctica/Individu.cc"; sourceTree = "<group>"; };
-		AE837A0C1EB62CDD00903BDC /* Individu.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Individu.hh; path = "../../Pràctica/Individu.hh"; sourceTree = "<group>"; };
-		AE837A0D1EB62CDD00903BDC /* main.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cc; path = "../../Pràctica/main.cc"; sourceTree = "<group>"; };
-		AE837A0E1EB62CDD00903BDC /* Parellcromosomes.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Parellcromosomes.hh; path = "../../Pràctica/Parellcromosomes.hh"; sourceTree = "<group>"; };
-		AE837A0F1EB62CDD00903BDC /* Parelldecromosomes.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Parelldecromosomes.cc; path = "../../Pràctica/Parelldecromosomes.cc"; sourceTree = "<group>"; };
-		AE837A101EB62CDD00903BDC /* Poblacio.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Poblacio.cc; path = "../../Pràctica/Poblacio.cc"; sourceTree = "<group>"; };
-		AE837A111EB62CDD00903BDC /* Poblacio.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Poblacio.hh; path = "../../Pràctica/Poblacio.hh"; sourceTree = "<group>"; };
+		AE837A171EB62D4D00903BDC /* Especie.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Especie.cc; sourceTree = "<group>"; };
+		AE837A181EB62D4D00903BDC /* Especie.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Especie.hh; sourceTree = "<group>"; };
+		AE837A191EB62D4D00903BDC /* Individu.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Individu.cc; sourceTree = "<group>"; };
+		AE837A1A1EB62D4D00903BDC /* Individu.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Individu.hh; sourceTree = "<group>"; };
+		AE837A1B1EB62D4D00903BDC /* main.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cc; sourceTree = "<group>"; };
+		AE837A1C1EB62D4D00903BDC /* Parellcromosomes.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Parellcromosomes.hh; sourceTree = "<group>"; };
+		AE837A1D1EB62D4D00903BDC /* Parelldecromosomes.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parelldecromosomes.cc; sourceTree = "<group>"; };
+		AE837A1E1EB62D4D00903BDC /* Poblacio.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Poblacio.cc; sourceTree = "<group>"; };
+		AE837A1F1EB62D4D00903BDC /* Poblacio.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Poblacio.hh; sourceTree = "<group>"; };
 		AEF651001EAFFD900017819E /* Practica PRO2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Practica PRO2"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -69,15 +69,15 @@
 		AEF651021EAFFD900017819E /* Practica PRO2 */ = {
 			isa = PBXGroup;
 			children = (
-				AE837A0D1EB62CDD00903BDC /* main.cc */,
-				AE837A091EB62CDD00903BDC /* Especie.cc */,
-				AE837A0A1EB62CDD00903BDC /* Especie.hh */,
-				AE837A101EB62CDD00903BDC /* Poblacio.cc */,
-				AE837A111EB62CDD00903BDC /* Poblacio.hh */,
-				AE837A0B1EB62CDD00903BDC /* Individu.cc */,
-				AE837A0C1EB62CDD00903BDC /* Individu.hh */,
-				AE837A0F1EB62CDD00903BDC /* Parelldecromosomes.cc */,
-				AE837A0E1EB62CDD00903BDC /* Parellcromosomes.hh */,
+				AE837A1B1EB62D4D00903BDC /* main.cc */,
+				AE837A171EB62D4D00903BDC /* Especie.cc */,
+				AE837A181EB62D4D00903BDC /* Especie.hh */,
+				AE837A1E1EB62D4D00903BDC /* Poblacio.cc */,
+				AE837A1F1EB62D4D00903BDC /* Poblacio.hh */,
+				AE837A191EB62D4D00903BDC /* Individu.cc */,
+				AE837A1A1EB62D4D00903BDC /* Individu.hh */,
+				AE837A1D1EB62D4D00903BDC /* Parelldecromosomes.cc */,
+				AE837A1C1EB62D4D00903BDC /* Parellcromosomes.hh */,
 				AEF651011EAFFD900017819E /* Products */,
 			);
 			path = "Practica PRO2";
@@ -140,11 +140,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE837A141EB62CDD00903BDC /* main.cc in Sources */,
-				AE837A151EB62CDD00903BDC /* Parelldecromosomes.cc in Sources */,
-				AE837A121EB62CDD00903BDC /* Especie.cc in Sources */,
-				AE837A131EB62CDD00903BDC /* Individu.cc in Sources */,
-				AE837A161EB62CDD00903BDC /* Poblacio.cc in Sources */,
+				AE837A221EB62D4D00903BDC /* main.cc in Sources */,
+				AE837A201EB62D4D00903BDC /* Especie.cc in Sources */,
+				AE837A211EB62D4D00903BDC /* Individu.cc in Sources */,
+				AE837A241EB62D4D00903BDC /* Poblacio.cc in Sources */,
+				AE837A231EB62D4D00903BDC /* Parelldecromosomes.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

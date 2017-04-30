@@ -52,6 +52,7 @@ int main(){
         }
 
         else if (accio == "reproduccion_sexual"){
+            cerr << "Introdueix nom de la mare, pare i fill" << endl;
             string nmare, npare, nfill;
             cin >> nmare >> npare >> nfill;
             
@@ -60,7 +61,7 @@ int main(){
             mare = poble.buscar_individu(nmare);
             pare = poble.buscar_individu(npare);
             
-            // fill.reproduir(pare, mare, npare, nmare, nfill, esp);
+            fill.reproduir(pare, mare, npare, nmare, nfill, esp);
             
 
             poble.afegir_individu(nfill, fill);
@@ -83,9 +84,9 @@ int main(){
             string nom;
             cin >> nom;
             
-            ind = poble.buscar_individu(nom, esp);
+            ind = poble.buscar_individu(nom);
             
-            ind.escriure_genotip();
+            ind.escriure_genotip(esp);
         }
     }
 

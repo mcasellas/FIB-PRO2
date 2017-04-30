@@ -40,6 +40,7 @@ void Poblacio::escriure_poblacio() const{
     for (map<string,Individu>::const_iterator it = poble.begin(); it != poble.end(); it++) {
         cout << (*it).first << " X" << (*it).second.consultar_sexe() << " (" << (*it).second.consultar_pare() << ',' << (*it).second.consultar_mare() << ')' << endl;
     }
+    cout << endl;
 }
 
 
