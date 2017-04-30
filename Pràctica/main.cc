@@ -1,11 +1,30 @@
-#include <iostream>
-#include <string>
+/**
+ * @mainpage Disseny modular: Experiments genètics en un laboratori.
+
+S'ofereix un menú d'opcions per gestionar les classes que formen part de l'experiment genètic. S'introdueixen les classes <em>Especie</em> i <em>Poblacio</em>.
+
+Nomès es documenten elements públics.
+*/
+
+/** @file main.cc
+    @brief Programa principal de la pràctica <em><b>Experiments genètics en un laboratori</b></em>.
+*/
+
+
 #include "Especie.hh"
 #include "Poblacio.hh"
+#include "Individu.hh"
 
-
+#ifndef NO_DIAGRAM
+#include <iostream>
+#include <string>
 using namespace std;
+#endif
 
+
+
+/** @brief Programa principal de la pràctica <em>Experiments genètics en un laboratori</em>.
+*/
 int main(){
 
     Especie esp;
@@ -14,18 +33,22 @@ int main(){
 
     Poblacio poble;
     
-    int numindiv;
-    cin >> numindiv;
-
-    poble.llegir_primers(numindiv);
+    int ninicials;
+    
+    
+    cerr << "Introdueix el número d'individus inicials" << endl;
+    cin >> ninicials;
+    
+    for (int i = 0; i < ninicials; i++) {
+        poble.llegir_individu(esp);
+    }
     
     string accio;
 
     while (cin >> accio and accio != "acabar"){
+        
         if (accio == "anadir_individuo"){
-            Individu ind;
-            ind.llegir();
-            poble.afegir_individu(ind);
+            poble.llegir_individu(esp);
         }
 
         else if (accio == "reproduccion_sexual"){
@@ -37,14 +60,14 @@ int main(){
             mare = poble.buscar_individu(nmare);
             pare = poble.buscar_individu(npare);
             
-            fill.reproduir(pare, mare, npare, nmare, nfill);
+            // fill.reproduir(pare, mare, npare, nmare, nfill, esp);
+            
 
-            poble.afegir_individu(fill);
+            poble.afegir_individu(nfill, fill);
         }
 
         else if (accio == "escribir_arbol_genealogico"){
-            Individu ind;
-            poble.escriure_arbre(ind);
+            poble.escriure_arbre();
         }
 
         else if (accio == "completar_arbol_genealogico"){
@@ -60,7 +83,7 @@ int main(){
             string nom;
             cin >> nom;
             
-            ind = poble.buscar_individu(nom);
+            ind = poble.buscar_individu(nom, esp);
             
             ind.escriure_genotip();
         }
