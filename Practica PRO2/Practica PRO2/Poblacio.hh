@@ -38,7 +38,7 @@ public:
         \pre El paràmetre implicit està inicialitzat, l'explícit conté el nom de l'individu a buscar.
         \post Retorna l'individu que correspon al nom.
     */
-    Individu buscar_individu(string nom, bool& trobat);
+    Individu buscar_individu(string nom);
     
     /** @brief Inclosora de la població.
      
