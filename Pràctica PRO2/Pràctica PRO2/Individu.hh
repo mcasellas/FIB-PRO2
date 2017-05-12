@@ -41,7 +41,7 @@ public:
     
     
     
-    void reproduir(Individu pare, Individu mare, string npare, string nmare, string nfill, Especie esp);
+    void reproduir(Individu pare, Individu mare, string npare, string nmare, string nfill, const Especie& esp);
 
     
     
@@ -82,9 +82,6 @@ public:
 
 
     void llegir_individu(Especie esp);
-
-   
-
 
 private:
     char sexe;

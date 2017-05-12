@@ -6,10 +6,8 @@ Individu::Individu(){
     
 }
 
-void Individu::reproduir(Individu indpare, Individu indmare, string npare, string nmare, string nfill, Especie esp){
-    if (indpare.consultar_sexe() != 'Y' or indmare.consultar_sexe() != 'X') cout << "no es posible reproduccion" << endl;
-        
-    else {
+void Individu::reproduir(Individu indpare, Individu indmare, string npare, string nmare, string nfill, const Especie& esp){
+    
         int cromo_mare, cromo_pare, punt_tall;
         
         for (int i = 0; i <= esp.consultar_n(); i++) { // Cromosoma a cromosoma
@@ -28,7 +26,7 @@ void Individu::reproduir(Individu indpare, Individu indmare, string npare, strin
             par_result.creuament(indpare.consultar_parell_cromosomes(i), indmare.consultar_parell_cromosomes(i), cromo_pare, cromo_mare, punt_tall, esp.consultar_ln(i));
             
             adn.push_back(par_result);
-        }
+        
     }
 
     pare = npare;
@@ -58,18 +56,18 @@ string Individu::consultar_mare() const{
 void Individu::escriure_genotip(Especie esp) const{
     for (int i = 0; i < adn.size(); i++) {
         if (i == 0){ // Escrivim primer els cromosomes sexuals
-            cout << "X: ";
+            cout << "  X: ";
             adn[i].escriure_cromosoma(1);
         
-            cout << "Y: ";
+            cout << "  Y: ";
             adn[i].escriure_cromosoma(2);
         }
         
         else {
-            cout << i << ".1: ";
+            cout << "  " << i << ".1: ";
             adn[i].escriure_cromosoma(1);
             
-            cout << i << ".2: ";
+            cout << "  " << i << ".2: ";
             adn[i].escriure_cromosoma(2);
         }
     }
