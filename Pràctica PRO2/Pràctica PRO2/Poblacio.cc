@@ -94,7 +94,13 @@ void Poblacio::completar_arbre(string nom){
     
     Arbre<string> aparcial;
     
-    llegir_arbre_string(aparcial);
+    //llegir_arbre_string(aparcial);
+    
+
+    
+    
+    // Eliminar desprès
+    buscar_arbre_complet(aparcial, nom);
     
     escriure_arbre_string(aparcial);
 }
@@ -103,15 +109,14 @@ void Poblacio::buscar_arbre_complet(Arbre<string>& arbre, string nom){
     
     Individu ind = buscar_individu(nom);
     
-    Arbre<string> a1;
-    Arbre<string> a2;
+    Arbre<string> a1, a2;
+    a1.a_buit();
+    a2.a_buit();
     
-    string x;
-    cin >> x;
-    if (x != "$") {
+    if (nom != "$") {
         buscar_arbre_complet(a1,ind.consultar_pare());
         buscar_arbre_complet(a2,ind.consultar_mare());
-        arbre.plantar(x,a1,a2);
+        arbre.plantar(nom,a1,a2);
     }
 }
 
