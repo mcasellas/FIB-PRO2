@@ -12,6 +12,7 @@
 		AE1DDCDA1EC37F070040553A /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE1DDCD31EC37F070040553A /* main.cc */; };
 		AE1DDCDB1EC37F070040553A /* Parelldecromosomes.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE1DDCD51EC37F070040553A /* Parelldecromosomes.cc */; };
 		AE1DDCDC1EC37F070040553A /* Poblacio.cc in Sources */ = {isa = PBXBuildFile; fileRef = AE1DDCD61EC37F070040553A /* Poblacio.cc */; };
+		AEAE39391EC5D19D00AD63CC /* ArbIO.cc in Sources */ = {isa = PBXBuildFile; fileRef = AEAE39371EC5D19D00AD63CC /* ArbIO.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,10 @@
 		AE1DDCD51EC37F070040553A /* Parelldecromosomes.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parelldecromosomes.cc; sourceTree = "<group>"; };
 		AE1DDCD61EC37F070040553A /* Poblacio.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Poblacio.cc; sourceTree = "<group>"; };
 		AE1DDCD71EC37F070040553A /* Poblacio.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Poblacio.hh; sourceTree = "<group>"; };
+		AEAE39351EC5CF0500AD63CC /* Arbre.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Arbre.hh; sourceTree = "<group>"; };
+		AEAE39361EC5D13C00AD63CC /* PRO2Excepcio.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PRO2Excepcio.hh; sourceTree = "<group>"; };
+		AEAE39371EC5D19D00AD63CC /* ArbIO.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArbIO.cc; sourceTree = "<group>"; };
+		AEAE39381EC5D19D00AD63CC /* ArbIO.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ArbIO.hh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +83,10 @@
 				AE1DDCD21EC37F070040553A /* Individu.hh */,
 				AE1DDCD51EC37F070040553A /* Parelldecromosomes.cc */,
 				AE1DDCD41EC37F070040553A /* Parellcromosomes.hh */,
+				AEAE39351EC5CF0500AD63CC /* Arbre.hh */,
+				AEAE39361EC5D13C00AD63CC /* PRO2Excepcio.hh */,
+				AEAE39371EC5D19D00AD63CC /* ArbIO.cc */,
+				AEAE39381EC5D19D00AD63CC /* ArbIO.hh */,
 			);
 			path = "Pràctica PRO2";
 			sourceTree = "<group>";
@@ -142,6 +151,7 @@
 				AE1DDCDA1EC37F070040553A /* main.cc in Sources */,
 				AE1DDCDB1EC37F070040553A /* Parelldecromosomes.cc in Sources */,
 				AE1DDCD81EC37F070040553A /* Especie.cc in Sources */,
+				AEAE39391EC5D19D00AD63CC /* ArbIO.cc in Sources */,
 				AE1DDCD91EC37F070040553A /* Individu.cc in Sources */,
 				AE1DDCDC1EC37F070040553A /* Poblacio.cc in Sources */,
 			);
@@ -272,6 +282,7 @@
 				AE1DDCCE1EC37EDB0040553A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -20,7 +20,7 @@
    es llegeix 1 2 0 4 0 0 3 0 0 (o amb els numeros en distintes linies) */
 
 
-void llegir_arbre_int(Arbre<int>& a, int marca);
+void llegir_arbre_string(Arbre<string>& a);
 
 
 // Escriptura d'un arbre binari d'enteros, accio.  Els elements
@@ -37,6 +37,6 @@ void llegir_arbre_int(Arbre<int>& a, int marca);
 
    s'escriu 2 4 1 3 */
 
-void escriure_arbre_int(Arbre<int>& a);
+void escriure_arbre_string(Arbre<string>& a);
 
 #endif

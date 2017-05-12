@@ -37,7 +37,7 @@ void Poblacio::escriure_arbre(string nom){ // Mirar estrucutra per amplada !!!!!
     
     queue<string> cua;
     
-    buscar_descendents(cua, buscar_individu(nom));
+    buscar_descendents_cua(cua, buscar_individu(nom));
     
     cout << "  Nivell 0: " << nom << endl;;
     
@@ -71,7 +71,7 @@ void Poblacio::escriure_arbre(string nom){ // Mirar estrucutra per amplada !!!!!
     
 }
 
-void Poblacio::buscar_descendents(queue<string>& cua, Individu ind){
+void Poblacio::buscar_descendents_cua(queue<string>& cua, Individu ind){
     
     
     if (ind.consultar_pare() == "$") {
@@ -81,10 +81,10 @@ void Poblacio::buscar_descendents(queue<string>& cua, Individu ind){
     else {
         cua.push(ind.consultar_pare());
         cua.push(ind.consultar_mare());
-        buscar_descendents(cua, buscar_individu(ind.consultar_pare()));
+        buscar_descendents_cua(cua, buscar_individu(ind.consultar_pare()));
         
         
-        buscar_descendents(cua, buscar_individu(ind.consultar_mare()));
+        buscar_descendents_cua(cua, buscar_individu(ind.consultar_mare()));
     }
     
 }
@@ -92,14 +92,28 @@ void Poblacio::buscar_descendents(queue<string>& cua, Individu ind){
 
 void Poblacio::completar_arbre(string nom){
     
-    queue<string> cua_arbre, cua_parcial;
+    Arbre<string> aparcial;
     
+    llegir_arbre_string(aparcial);
     
-    
-    buscar_descendents(cua_arbre, buscar_individu(nom));
-    
+    escriure_arbre_string(aparcial);
 }
 
+void Poblacio::buscar_arbre_complet(Arbre<string>& arbre, string nom){
+    
+    Individu ind = buscar_individu(nom);
+    
+    Arbre<string> a1;
+    Arbre<string> a2;
+    
+    string x;
+    cin >> x;
+    if (x != "$") {
+        buscar_arbre_complet(a1,ind.consultar_pare());
+        buscar_arbre_complet(a2,ind.consultar_mare());
+        arbre.plantar(x,a1,a2);
+    }
+}
 
 void Poblacio::escriure_poblacio() const{
     for (map<string,Individu>::const_iterator it = poble.begin(); it != poble.end(); it++) {

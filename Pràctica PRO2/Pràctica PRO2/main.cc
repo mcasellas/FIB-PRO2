@@ -82,7 +82,7 @@ int main(){
             
         }
 
-        else if (accio == "completar_arbol_genealogico"){
+        else if (accio == "completar_arbol_genealogico"){ 
             string nom;
             cin >> nom;
             poble.completar_arbre(nom);

@@ -6,6 +6,8 @@
 #define _POBLACIO_HH_
 
 #include "Individu.hh"
+#include "Arbre.hh"
+#include "ArbIO.hh"
 
 #ifndef NO_DIAGRAM
 #include <queue>
@@ -60,7 +62,7 @@ public:
     void escriure_arbre(string nom);
     
     
-    void buscar_descendents(queue<string>& cua, Individu ind);
+    void buscar_descendents_cua(queue<string>& cua, Individu ind);
     
     
     /** @brief Completadora d'arbres.
@@ -69,6 +71,8 @@ public:
         \post S'imprimeix pel canal de sortida l'arbre complet amb arrel establerta a l'individu, marcant les individus que faltaven el d'entrada. Si l'arbre d'entrada no fos parcial es mostrarà "no es arbol parcial".
     */
     void completar_arbre(string nom);
+    
+    void buscar_arbre_complet(Arbre<string>& arbre, string nom);
     
     /** @brief Completadora d'arbres.
      
