@@ -76,10 +76,10 @@ void Individu::escriure_genotip(Especie esp) const{
 
 
 void Individu::llegir_individu(Especie esp){
-    cerr << "Introdueix el sexe" << endl;
+    
     cin >> sexe;
     
-    cerr << "Introdueix les dades genètiques" << endl;
+    
     
 
     // Cromosomes sexuals

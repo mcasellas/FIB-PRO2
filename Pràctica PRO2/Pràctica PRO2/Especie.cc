@@ -9,10 +9,10 @@ Especie::Especie() {
 }
 
 void Especie::establir_genetica(){
-    cerr << "Introdueix la n:" << endl;
+    
     cin >> n;
 
-    cerr<< "Introdueix les longituds dels cromosomes (" << n+1 << " valors)" <<  endl;
+    
 
     for (int i = 0; i <= n; i++){
         int longit;
@@ -20,7 +20,7 @@ void Especie::establir_genetica(){
         l.push_back(longit);
     }
 
-    cerr << "Introdueix la lx i ly:" << endl;
+    
 
     cin >> lx >> ly;
 }

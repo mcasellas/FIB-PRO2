@@ -36,13 +36,13 @@ int main(){
     int ninicials;
     
     
-    cerr << "Introdueix el número d'individus inicials" << endl;
+    
     cin >> ninicials;
     
     for (int i = 0; i < ninicials; i++) {
         poble.llegir_individu(esp);
         
-           }
+    }
     
     string accio;
 
@@ -53,27 +53,34 @@ int main(){
         }
 
         else if (accio == "reproduccion_sexual"){
-            cerr << "Introdueix nom de la mare, pare i fill" << endl;
             string nmare, npare, nfill;
             cin >> nmare >> npare >> nfill;
             
+            cout << "reproduccion_sexual " << nmare << ' ' << npare << ' ' << nfill << endl;
+
             Individu pare, mare, fill;
+            
+            if (not poble.comprovar_individu(nmare) or not poble.comprovar_individu(npare) or poble.comprovar_individu(nfill)) cout << "  error" << endl;
+            
+            else {
             
             mare = poble.buscar_individu(nmare);
             pare = poble.buscar_individu(npare);
             
-            if (pare.consultar_sexe() != 'Y' or mare.consultar_sexe() != 'X') cout << "no es posible reproduccion" << endl;
+            if (pare.consultar_sexe() != 'Y' or mare.consultar_sexe() != 'X') cout << "  no es posible reproduccion" << endl;
             
             else{
-            fill.reproduir(pare, mare, npare, nmare, nfill, esp);
+                fill.reproduir(pare, mare, npare, nmare, nfill, esp);
 
-            poble.afegir_individu(nfill, fill);
+                poble.afegir_individu(nfill, fill);
+            }
+                
             }
 
         }
 
         else if (accio == "escribir_arbol_genealogico"){
-            cerr << "Escriu el nom" << endl;
+        
             string nom;
             cin >> nom;
             
@@ -109,5 +116,5 @@ int main(){
     }
 
     
-    cerr << "fi" << endl;
+    
 }

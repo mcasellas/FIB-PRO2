@@ -74,6 +74,7 @@ void Poblacio::escriure_arbre(string nom){ // Mirar estrucutra per amplada !!!!!
 void Poblacio::buscar_descendents_cua(queue<string>& cua, Individu ind){
     
     
+    
     if (ind.consultar_pare() == "$") {
         cua.push("$");
         cua.push("$");
@@ -81,9 +82,8 @@ void Poblacio::buscar_descendents_cua(queue<string>& cua, Individu ind){
     else {
         cua.push(ind.consultar_pare());
         cua.push(ind.consultar_mare());
+        
         buscar_descendents_cua(cua, buscar_individu(ind.consultar_pare()));
-        
-        
         buscar_descendents_cua(cua, buscar_individu(ind.consultar_mare()));
     }
     
@@ -92,32 +92,36 @@ void Poblacio::buscar_descendents_cua(queue<string>& cua, Individu ind){
 
 void Poblacio::completar_arbre(string nom){
     
-    Arbre<string> aparcial;
+    Arbre<string> aparcial, acomplet;
     
-    //llegir_arbre_string(aparcial);
+    int coneguts = 1;
+    int desconeguts = 0;
     
-
+    llegir_arbre_string(aparcial, coneguts, desconeguts);
     
+    buscar_arbre_complet(acomplet, nom);
     
-    // Eliminar desprès
-    buscar_arbre_complet(aparcial, nom);
+    escriure_arbre_string(acomplet);
     
-    escriure_arbre_string(aparcial);
+    //escriure_arbre_string(aparcial);
 }
 
 void Poblacio::buscar_arbre_complet(Arbre<string>& arbre, string nom){
     
-    Individu ind = buscar_individu(nom);
-    
     Arbre<string> a1, a2;
-    a1.a_buit();
-    a2.a_buit();
     
-    if (nom != "$") {
-        buscar_arbre_complet(a1,ind.consultar_pare());
-        buscar_arbre_complet(a2,ind.consultar_mare());
-        arbre.plantar(nom,a1,a2);
+    if (nom != "$"){
+        Individu ind = buscar_individu(nom);
+        
+        
+        
+        buscar_arbre_complet(a1, ind.consultar_pare());
+        buscar_arbre_complet(a2, ind.consultar_mare());
+        arbre.plantar(nom, a1, a2);
     }
+    
+    else arbre.plantar(nom, a1, a2);
+
 }
 
 void Poblacio::escriure_poblacio() const{
@@ -132,17 +136,17 @@ void Poblacio::llegir_individu(Especie esp){
     
     Individu ind;
     string nom;
-    
-    
-    cerr << "Introdueix el nom" << endl;
+
     cin >> nom;
     
     if (not comprovar_individu(nom)) {
         ind.llegir_individu(esp);
 
         afegir_individu(nom,ind);
+        
+        cout << "anadir_individuo " << nom << endl;
     }
     
-    else cout << "error" << endl;
+    else cout << "  error" << endl;
 
 }
