@@ -70,9 +70,21 @@ public:
         \pre El paràmetre implicit està inicialitzat. Es preparen pel canal d'entrada els elements coneguts d'un arbre geneaològic.
         \post S'imprimeix pel canal de sortida l'arbre complet amb arrel establerta a l'individu, marcant les individus que faltaven el d'entrada. Si l'arbre d'entrada no fos parcial es mostrarà "no es arbol parcial".
     */
-    void completar_arbre(string nom);
+    void completar_arbre();
+    
+    bool es_arbre_parcial(Arbre<string> a, string nom);
     
     void buscar_arbre_complet(Arbre<string>& arbre, string nom);
+    
+    void llegir_arbre_parcial(Arbre<string>& nom);
+    
+    
+    
+    
+    
+    
+    
+    
     
     /** @brief Completadora d'arbres.
      

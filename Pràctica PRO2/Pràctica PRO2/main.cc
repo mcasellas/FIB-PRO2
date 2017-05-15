@@ -89,10 +89,10 @@ int main(){
             
         }
 
-        else if (accio == "completar_arbol_genealogico"){ 
-            string nom;
-            cin >> nom;
-            poble.completar_arbre(nom);
+        else if (accio == "completar_arbol_genealogico"){
+            poble.completar_arbre();
+            
+            //cout << "no es arbol parcial" << endl;
         }
 
         else if (accio == "escribir_poblacion"){

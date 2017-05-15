@@ -25,13 +25,10 @@ bool Poblacio::comprovar_individu(string nom){
     return false;
 }
 
-
 void Poblacio::afegir_individu(string nom, const Individu& p){
 
     poble[nom] = p;
 }
-
-
 
 void Poblacio::escriure_arbre(string nom){ // Mirar estrucutra per amplada !!!!!!!
     
@@ -89,21 +86,19 @@ void Poblacio::buscar_descendents_cua(queue<string>& cua, Individu ind){
     
 }
 
-
-void Poblacio::completar_arbre(string nom){
+void Poblacio::completar_arbre(){
     
     Arbre<string> aparcial, acomplet;
+
     
-    int coneguts = 1;
-    int desconeguts = 0;
+    llegir_arbre_parcial(aparcial);
     
-    llegir_arbre_string(aparcial, coneguts, desconeguts);
+    //buscar_arbre_complet(acomplet, aparcial.arrel());
     
-    buscar_arbre_complet(acomplet, nom);
+    //es_arbre_parcial(acomplet, aparcial.arrel()); // Aparcial no crec
     
-    escriure_arbre_string(acomplet);
+    cerr << "fi" << endl;
     
-    //escriure_arbre_string(aparcial);
 }
 
 void Poblacio::buscar_arbre_complet(Arbre<string>& arbre, string nom){
@@ -123,6 +118,69 @@ void Poblacio::buscar_arbre_complet(Arbre<string>& arbre, string nom){
     else arbre.plantar(nom, a1, a2);
 
 }
+
+bool Poblacio::es_arbre_parcial(Arbre<string> a, string nom){
+    
+    bool resultat = true;
+    
+    
+    if (a.es_buit()){
+        resultat = false;
+    }
+    
+    else {
+        if (nom == "$" and  a.arrel() != "$"){
+            cout << " *" << a.arrel() << '*';
+        }
+        else if (nom == a.arrel()){
+            cout << " " << a.arrel();
+        }
+        
+        else {
+            resultat = false;
+        }
+        
+        Arbre<string> a1, a2;
+        
+        a.fills(a1, a2);
+        cin >> nom;
+        resultat = es_arbre_parcial(a1, nom);
+        cin >> nom;
+        resultat = es_arbre_parcial(a2, nom);
+        
+        
+    }
+    
+    return resultat;
+}
+
+void Poblacio::llegir_arbre_parcial(Arbre<string>& a){
+    Arbre<string> a1, a2;
+    string nom;
+    cin >> nom;
+    
+    if (nom != "/") {
+        llegir_arbre_parcial(a1);
+        llegir_arbre_parcial(a2);
+        a.plantar(nom,a1,a2);
+    }
+    
+    else cout << "barra" << endl;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 void Poblacio::escriure_poblacio() const{
     for (map<string,Individu>::const_iterator it = poble.begin(); it != poble.end(); it++) {
