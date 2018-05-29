@@ -1,0 +1,297 @@
+\hypertarget{class_parell__cromosomes}{}\section{Referència de la Classe Parell\+\_\+cromosomes}
+\label{class_parell__cromosomes}\index{Parell\+\_\+cromosomes@{Parell\+\_\+cromosomes}}
+
+
+Representa un parell de cromosomes.  
+
+
+\subsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_parell__cromosomes_a7985c1aa62522044b5e713e065d91463}{Parell\+\_\+cromosomes} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecte. \end{DoxyCompactList}\item 
+void \hyperlink{class_parell__cromosomes_a4be1f5db491e742fa2ced6a22442c0a2}{creuament} (\hyperlink{class_parell__cromosomes}{Parell\+\_\+cromosomes} pare, \hyperlink{class_parell__cromosomes}{Parell\+\_\+cromosomes} mare, int npare, int nmare, int k, int lo)
+\begin{DoxyCompactList}\small\item\em Creuadora de dos cromosomes. \end{DoxyCompactList}\item 
+void \hyperlink{class_parell__cromosomes_a5d96548d03bc22d40125a76c5654b3cd}{llegir\+\_\+cromosomes\+\_\+no\+\_\+sexuals} (int llargada\+\_\+parell)
+\begin{DoxyCompactList}\small\item\em Lectora del material genètic dels cromosomes no sexuals. \end{DoxyCompactList}\item 
+void \hyperlink{class_parell__cromosomes_a63a4bff5f37c05ff7b6834ff48b4ceba}{llegir\+\_\+cromosomes\+\_\+sexuals} (int llargada\+\_\+lx, int llargada\+\_\+ly, char sexe)
+\begin{DoxyCompactList}\small\item\em Lectora del material genètic dels cromosomes sexuals. \end{DoxyCompactList}\item 
+void \hyperlink{class_parell__cromosomes_a3279b69d2e17094515eb9ac1f3f0cd72}{escriure\+\_\+cromosoma} (int num) const 
+\begin{DoxyCompactList}\small\item\em Escriptora d\textquotesingle{}un cromosoma. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ int $>$ \hyperlink{class_parell__cromosomes_ac031fd24ba85d2bc3384afaf6c81ac23}{consultar\+\_\+cromosoma} (int num) const 
+\begin{DoxyCompactList}\small\item\em Consultora d\textquotesingle{}un cromosoma. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ int $>$ \hyperlink{class_parell__cromosomes_ab7f48c884531da8e1fe3a08d80235c9a}{c1}
+\begin{DoxyCompactList}\small\item\em Cromosoma 1. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \hyperlink{class_parell__cromosomes_a6e3169a9ca8b8d508ce1c0143a5b4a82}{c2}
+\begin{DoxyCompactList}\small\item\em Cromosoma 2. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripció Detallada}
+Representa un parell de cromosomes. 
+
+Permet llegir i consultar un parell concret de cromosomes. 
+
+Definició a la línia 21 del fitxer Parellcromosomes.\+hh.
+
+
+
+\subsection{Documentació del Constructor i el Destructor}
+\index{Parell\+\_\+cromosomes@{Parell\+\_\+cromosomes}!Parell\+\_\+cromosomes@{Parell\+\_\+cromosomes}}
+\index{Parell\+\_\+cromosomes@{Parell\+\_\+cromosomes}!Parell\+\_\+cromosomes@{Parell\+\_\+cromosomes}}
+\subsubsection[{\texorpdfstring{Parell\+\_\+cromosomes()}{Parell_cromosomes()}}]{\setlength{\rightskip}{0pt plus 5cm}Parell\+\_\+cromosomes\+::\+Parell\+\_\+cromosomes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_parell__cromosomes_a7985c1aa62522044b5e713e065d91463}{}\label{class_parell__cromosomes_a7985c1aa62522044b5e713e065d91463}
+
+
+Creadora por defecte. 
+
+S\textquotesingle{}executa automàticament al declarar un parell de cromosomes. \begin{DoxyPrecond}{Precondició}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat és un parell de cromosomes sense gens. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 9 del fitxer Parellcromosomes.\+cc.
+
+
+\begin{DoxyCode}
+9 \{\}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Funcions Membre}
+\index{Parell\+\_\+cromosomes@{Parell\+\_\+cromosomes}!creuament@{creuament}}
+\index{creuament@{creuament}!Parell\+\_\+cromosomes@{Parell\+\_\+cromosomes}}
+\subsubsection[{\texorpdfstring{creuament(\+Parell\+\_\+cromosomes pare, Parell\+\_\+cromosomes mare, int npare, int nmare, int k, int lo)}{creuament(Parell_cromosomes pare, Parell_cromosomes mare, int npare, int nmare, int k, int lo)}}]{\setlength{\rightskip}{0pt plus 5cm}void Parell\+\_\+cromosomes\+::creuament (
+\begin{DoxyParamCaption}
+\item[{{\bf Parell\+\_\+cromosomes}}]{pare, }
+\item[{{\bf Parell\+\_\+cromosomes}}]{mare, }
+\item[{int}]{npare, }
+\item[{int}]{nmare, }
+\item[{int}]{k, }
+\item[{int}]{lo}
+\end{DoxyParamCaption}
+)}\hypertarget{class_parell__cromosomes_a4be1f5db491e742fa2ced6a22442c0a2}{}\label{class_parell__cromosomes_a4be1f5db491e742fa2ced6a22442c0a2}
+
+
+Creuadora de dos cromosomes. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre explicit conté el parell de cromosomes del pare, de la mare, el seleccionat pel pare, el per la mare i el punt de tall. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es retorna el parell de cromosomes corresponent al fill, després del creuament utilitzant el punt de tall. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 11 del fitxer Parellcromosomes.\+cc.
+
+
+\begin{DoxyCode}
+11                                                                                                            
+               \{
+12     
+13     \textcolor{keywordtype}{int} i;
+14     
+15     \textcolor{keywordflow}{for} (i = 0; i < lo; i++)\{ \textcolor{comment}{// Fins al punt de creuament}
+16         \textcolor{keywordflow}{if} (i < k) \{
+17             \hyperlink{class_parell__cromosomes_ab7f48c884531da8e1fe3a08d80235c9a}{c1}.push\_back(mare.\hyperlink{class_parell__cromosomes_ac031fd24ba85d2bc3384afaf6c81ac23}{consultar\_cromosoma}(nmare)[i]);
+18             \hyperlink{class_parell__cromosomes_a6e3169a9ca8b8d508ce1c0143a5b4a82}{c2}.push\_back(pare.\hyperlink{class_parell__cromosomes_ac031fd24ba85d2bc3384afaf6c81ac23}{consultar\_cromosoma}(npare)[i]);
+19         \}
+20         \textcolor{keywordflow}{else} \{
+21             \hyperlink{class_parell__cromosomes_ab7f48c884531da8e1fe3a08d80235c9a}{c1}.push\_back(pare.\hyperlink{class_parell__cromosomes_ac031fd24ba85d2bc3384afaf6c81ac23}{consultar\_cromosoma}(npare)[i]);
+22             \hyperlink{class_parell__cromosomes_a6e3169a9ca8b8d508ce1c0143a5b4a82}{c2}.push\_back(mare.\hyperlink{class_parell__cromosomes_ac031fd24ba85d2bc3384afaf6c81ac23}{consultar\_cromosoma}(nmare)[i]);
+23         \}
+24     \}
+25     
+26     \textcolor{keywordflow}{if} (i >= lo)\{ \textcolor{comment}{// Des del punt de creuament fins el final}
+27         \textcolor{keywordtype}{int} aux = i;
+28         \textcolor{keywordflow}{while} (mare.\hyperlink{class_parell__cromosomes_ac031fd24ba85d2bc3384afaf6c81ac23}{consultar\_cromosoma}(nmare).size() != \hyperlink{class_parell__cromosomes_ab7f48c884531da8e1fe3a08d80235c9a}{c1}.size())\{
+29             \hyperlink{class_parell__cromosomes_ab7f48c884531da8e1fe3a08d80235c9a}{c1}.push\_back(mare.\hyperlink{class_parell__cromosomes_ac031fd24ba85d2bc3384afaf6c81ac23}{consultar\_cromosoma}(nmare)[i]);
+30             ++i;
+31         \}
+32         i = aux;
+33         \textcolor{keywordflow}{while} (pare.\hyperlink{class_parell__cromosomes_ac031fd24ba85d2bc3384afaf6c81ac23}{consultar\_cromosoma}(npare).size() != \hyperlink{class_parell__cromosomes_a6e3169a9ca8b8d508ce1c0143a5b4a82}{c2}.size())\{
+34             \hyperlink{class_parell__cromosomes_a6e3169a9ca8b8d508ce1c0143a5b4a82}{c2}.push\_back(pare.\hyperlink{class_parell__cromosomes_ac031fd24ba85d2bc3384afaf6c81ac23}{consultar\_cromosoma}(npare)[i]);
+35             ++i;
+36         \}
+37     \}
+38 \}
+\end{DoxyCode}
+\index{Parell\+\_\+cromosomes@{Parell\+\_\+cromosomes}!llegir\+\_\+cromosomes\+\_\+no\+\_\+sexuals@{llegir\+\_\+cromosomes\+\_\+no\+\_\+sexuals}}
+\index{llegir\+\_\+cromosomes\+\_\+no\+\_\+sexuals@{llegir\+\_\+cromosomes\+\_\+no\+\_\+sexuals}!Parell\+\_\+cromosomes@{Parell\+\_\+cromosomes}}
+\subsubsection[{\texorpdfstring{llegir\+\_\+cromosomes\+\_\+no\+\_\+sexuals(int llargada\+\_\+parell)}{llegir_cromosomes_no_sexuals(int llargada_parell)}}]{\setlength{\rightskip}{0pt plus 5cm}void Parell\+\_\+cromosomes\+::llegir\+\_\+cromosomes\+\_\+no\+\_\+sexuals (
+\begin{DoxyParamCaption}
+\item[{int}]{llargada\+\_\+parell}
+\end{DoxyParamCaption}
+)}\hypertarget{class_parell__cromosomes_a5d96548d03bc22d40125a76c5654b3cd}{}\label{class_parell__cromosomes_a5d96548d03bc22d40125a76c5654b3cd}
+
+
+Lectora del material genètic dels cromosomes no sexuals. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implicit està inicialitzat amb el parell de cromosomes corresponent. El paràmetre explícit conté la llargada del parell concret que es vol afegir. El canal d\textquotesingle{}entrada conté la informació genètica del parell de cromosomes no sexuals que es volen llegir. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es guarda la informació dins de cada cromosoma del parell. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 41 del fitxer Parellcromosomes.\+cc.
+
+
+\begin{DoxyCode}
+41                                                                        \{
+42     \textcolor{keywordtype}{int} alel;
+43     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < llargada\_parell; i++)\{
+44         cin >> alel;
+45         \hyperlink{class_parell__cromosomes_ab7f48c884531da8e1fe3a08d80235c9a}{c1}.push\_back(alel);
+46     \}
+47     
+48     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < llargada\_parell; i++)\{
+49         cin >> alel;
+50         \hyperlink{class_parell__cromosomes_a6e3169a9ca8b8d508ce1c0143a5b4a82}{c2}.push\_back(alel);
+51     \}
+52 \}
+\end{DoxyCode}
+\index{Parell\+\_\+cromosomes@{Parell\+\_\+cromosomes}!llegir\+\_\+cromosomes\+\_\+sexuals@{llegir\+\_\+cromosomes\+\_\+sexuals}}
+\index{llegir\+\_\+cromosomes\+\_\+sexuals@{llegir\+\_\+cromosomes\+\_\+sexuals}!Parell\+\_\+cromosomes@{Parell\+\_\+cromosomes}}
+\subsubsection[{\texorpdfstring{llegir\+\_\+cromosomes\+\_\+sexuals(int llargada\+\_\+lx, int llargada\+\_\+ly, char sexe)}{llegir_cromosomes_sexuals(int llargada_lx, int llargada_ly, char sexe)}}]{\setlength{\rightskip}{0pt plus 5cm}void Parell\+\_\+cromosomes\+::llegir\+\_\+cromosomes\+\_\+sexuals (
+\begin{DoxyParamCaption}
+\item[{int}]{llargada\+\_\+lx, }
+\item[{int}]{llargada\+\_\+ly, }
+\item[{char}]{sexe}
+\end{DoxyParamCaption}
+)}\hypertarget{class_parell__cromosomes_a63a4bff5f37c05ff7b6834ff48b4ceba}{}\label{class_parell__cromosomes_a63a4bff5f37c05ff7b6834ff48b4ceba}
+
+
+Lectora del material genètic dels cromosomes sexuals. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implicit està inicialitzat amb el parell de cromosomes corresponent. El paràmetre explícit conté la llargada del cromosoma X, del Y i el sexe del individu. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es guarda la informació dins de cada cromosoma del parell d\textquotesingle{}acord amb el sexe (si és femení, els dos tindràn la mateixa llargada, ja que seràn tots dos X). 
+\end{DoxyPostcond}
+
+
+Definició a la línia 54 del fitxer Parellcromosomes.\+cc.
+
+
+\begin{DoxyCode}
+54                                                                                  \{
+55     \textcolor{keywordtype}{int} alel;
+56     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < primer; i++)\{
+57         cin >> alel;
+58         \hyperlink{class_parell__cromosomes_ab7f48c884531da8e1fe3a08d80235c9a}{c1}.push\_back(alel);
+59     \}
+60     
+61     \textcolor{keywordflow}{if} (sexe == \textcolor{charliteral}{'X'}) segon = primer;
+62     
+63     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < segon; i++)\{
+64         cin >> alel;
+65         \hyperlink{class_parell__cromosomes_a6e3169a9ca8b8d508ce1c0143a5b4a82}{c2}.push\_back(alel);
+66     \}
+67 \}
+\end{DoxyCode}
+\index{Parell\+\_\+cromosomes@{Parell\+\_\+cromosomes}!escriure\+\_\+cromosoma@{escriure\+\_\+cromosoma}}
+\index{escriure\+\_\+cromosoma@{escriure\+\_\+cromosoma}!Parell\+\_\+cromosomes@{Parell\+\_\+cromosomes}}
+\subsubsection[{\texorpdfstring{escriure\+\_\+cromosoma(int num) const }{escriure_cromosoma(int num) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Parell\+\_\+cromosomes\+::escriure\+\_\+cromosoma (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_parell__cromosomes_a3279b69d2e17094515eb9ac1f3f0cd72}{}\label{class_parell__cromosomes_a3279b69d2e17094515eb9ac1f3f0cd72}
+
+
+Escriptora d\textquotesingle{}un cromosoma. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implicit està inicialitzat amb el parell de cromosomes corresponent. El paràmetre explícit conté quin dels dos cromosomes s\textquotesingle{}ha d\textquotesingle{}imprimir pel canal de sortida (1 o 2). 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}escriuen pel canal de sortida els al·lels del cromosoma corresponent. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 69 del fitxer Parellcromosomes.\+cc.
+
+
+\begin{DoxyCode}
+69                                                         \{
+70     
+71     \textcolor{keywordflow}{if} (num == 1) \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{class_parell__cromosomes_ab7f48c884531da8e1fe3a08d80235c9a}{c1}.size(); i++) cout << \textcolor{stringliteral}{" "} << \hyperlink{class_parell__cromosomes_ab7f48c884531da8e1fe3a08d80235c9a}{c1}[i];
+72     
+73     \textcolor{keywordflow}{else} \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{class_parell__cromosomes_a6e3169a9ca8b8d508ce1c0143a5b4a82}{c2}.size(); i++) cout << \textcolor{stringliteral}{" "} << \hyperlink{class_parell__cromosomes_a6e3169a9ca8b8d508ce1c0143a5b4a82}{c2}[i];
+74     
+75     cout << endl;
+76 \}
+\end{DoxyCode}
+\index{Parell\+\_\+cromosomes@{Parell\+\_\+cromosomes}!consultar\+\_\+cromosoma@{consultar\+\_\+cromosoma}}
+\index{consultar\+\_\+cromosoma@{consultar\+\_\+cromosoma}!Parell\+\_\+cromosomes@{Parell\+\_\+cromosomes}}
+\subsubsection[{\texorpdfstring{consultar\+\_\+cromosoma(int num) const }{consultar_cromosoma(int num) const }}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ int $>$ Parell\+\_\+cromosomes\+::consultar\+\_\+cromosoma (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_parell__cromosomes_ac031fd24ba85d2bc3384afaf6c81ac23}{}\label{class_parell__cromosomes_ac031fd24ba85d2bc3384afaf6c81ac23}
+
+
+Consultora d\textquotesingle{}un cromosoma. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre explicit està inicialitzat amb el número del cromosoma que es vol consultar (0 pel primer, 1 pel segon). 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es retorna el vector corresponent al cromosoma del paràmetre explícit. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 78 del fitxer Parellcromosomes.\+cc.
+
+
+\begin{DoxyCode}
+78                                                                 \{
+79     \textcolor{keywordflow}{if} (num == 0) \textcolor{keywordflow}{return} \hyperlink{class_parell__cromosomes_ab7f48c884531da8e1fe3a08d80235c9a}{c1};
+80     \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \hyperlink{class_parell__cromosomes_a6e3169a9ca8b8d508ce1c0143a5b4a82}{c2};
+81 \}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Dades Membre}
+\index{Parell\+\_\+cromosomes@{Parell\+\_\+cromosomes}!c1@{c1}}
+\index{c1@{c1}!Parell\+\_\+cromosomes@{Parell\+\_\+cromosomes}}
+\subsubsection[{\texorpdfstring{c1}{c1}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$ Parell\+\_\+cromosomes\+::c1\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_parell__cromosomes_ab7f48c884531da8e1fe3a08d80235c9a}{}\label{class_parell__cromosomes_ab7f48c884531da8e1fe3a08d80235c9a}
+
+
+Cromosoma 1. 
+
+
+
+Definició a la línia 70 del fitxer Parellcromosomes.\+hh.
+
+\index{Parell\+\_\+cromosomes@{Parell\+\_\+cromosomes}!c2@{c2}}
+\index{c2@{c2}!Parell\+\_\+cromosomes@{Parell\+\_\+cromosomes}}
+\subsubsection[{\texorpdfstring{c2}{c2}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$ Parell\+\_\+cromosomes\+::c2\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_parell__cromosomes_a6e3169a9ca8b8d508ce1c0143a5b4a82}{}\label{class_parell__cromosomes_a6e3169a9ca8b8d508ce1c0143a5b4a82}
+
+
+Cromosoma 2. 
+
+
+
+Definició a la línia 72 del fitxer Parellcromosomes.\+hh.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir dels següents fitxers\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_parellcromosomes_8hh}{Parellcromosomes.\+hh}\item 
+\hyperlink{_parellcromosomes_8cc}{Parellcromosomes.\+cc}\end{DoxyCompactItemize}

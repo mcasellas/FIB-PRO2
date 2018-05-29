@@ -1,0 +1,103 @@
+\hypertarget{program_8cc}{}\section{Referència del Fitxer program.\+cc}
+\label{program_8cc}\index{program.\+cc@{program.\+cc}}
+
+
+Programa principal de la pràctica {\itshape {\bfseries Experiments genètics en un laboratori}}.  
+
+
+Inclou el graf de dependències per a program.\+cc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{program_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Funcions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em Programa principal de la pràctica {\itshape Experiments genètics en un laboratori}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripció Detallada}
+Programa principal de la pràctica {\itshape {\bfseries Experiments genètics en un laboratori}}. 
+
+
+
+\subsection{Documentació de les Funcions}
+\index{program.\+cc@{program.\+cc}!main@{main}}
+\index{main@{main}!program.\+cc@{program.\+cc}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\label{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Programa principal de la pràctica {\itshape Experiments genètics en un laboratori}. 
+
+
+
+Definició a la línia 28 del fitxer program.\+cc.
+
+
+\begin{DoxyCode}
+28           \{
+29 
+30     \hyperlink{class_especie}{Especie} esp;
+31 
+32     esp.\hyperlink{class_especie_a5c424f7536e2e5fcb7e7e5452ab24ff7}{establir\_genetica}();
+33 
+34     \hyperlink{class_poblacio}{Poblacio} poble;
+35     
+36     poble.\hyperlink{class_poblacio_a8757ef86688a1e2c25d9264aea934a28}{llegir\_inicials}(esp);
+37     
+38     \textcolor{keywordtype}{string} accio;
+39 
+40     \textcolor{keywordflow}{while} (cin >> accio and accio != \textcolor{stringliteral}{"acabar"})\{
+41         
+42         \textcolor{keywordflow}{if} (accio == \textcolor{stringliteral}{"anadir\_individuo"})\{
+43             poble.\hyperlink{class_poblacio_a29df411fde89d37a05fb705e1cc3dd8b}{llegir}(esp);
+44         \}
+45 
+46         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (accio == \textcolor{stringliteral}{"reproduccion\_sexual"})\{
+47             \textcolor{keywordtype}{string} mare, pare, fill;
+48             cin >> mare >> pare >> fill;
+49             
+50             poble.\hyperlink{class_poblacio_a9e31f2e6394618bc130280322cb24fbf}{reproduir}(pare, mare, fill, esp);
+51             
+52         \}
+53         
+54         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (accio == \textcolor{stringliteral}{"escribir\_arbol\_genealogico"})\{
+55             \textcolor{keywordtype}{string} nom;
+56             cin >> nom;
+57             poble.\hyperlink{class_poblacio_a82a6f322f03527ab4273223f351c1036}{escriure\_arbre\_genealogic}(nom);
+58         \}
+59 
+60         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (accio == \textcolor{stringliteral}{"completar\_arbol\_genealogico"})\{
+61             poble.\hyperlink{class_poblacio_abe25acd8c2ce02a747ab79f26cc74f11}{completar\_arbre}();
+62         \}
+63 
+64         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (accio == \textcolor{stringliteral}{"escribir\_poblacion"})\{
+65             poble.\hyperlink{class_poblacio_acef5af456368a81c4f3be0bd44841bf1}{escriure\_poblacio}();
+66         \}
+67 
+68         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (accio == \textcolor{stringliteral}{"escribir\_genotipo"})\{
+69             \textcolor{keywordtype}{string} nom;
+70             cin >> nom;
+71             
+72             cout << \textcolor{stringliteral}{"escribir\_genotipo "} << nom << endl;
+73             
+74             \textcolor{keywordflow}{if} (poble.\hyperlink{class_poblacio_ac32cb311f3b283b82adf3d0b7d82fbcc}{existeix\_individu}(nom)) poble.
+      \hyperlink{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{consultar\_individu}(nom).\hyperlink{class_individu_a66e02b3d1a7e327ffb152c1e6193407a}{escriure\_genotip}();
+75             
+76             \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"  error"} << endl;
+77         \}
+78     \}
+79     
+80     cout << \textcolor{stringliteral}{"acabar"} << endl;
+81 
+82     
+83     
+84 \}
+\end{DoxyCode}

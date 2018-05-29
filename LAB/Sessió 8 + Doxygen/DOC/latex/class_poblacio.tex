@@ -1,0 +1,741 @@
+\hypertarget{class_poblacio}{}\section{Referència de la Classe Poblacio}
+\label{class_poblacio}\index{Poblacio@{Poblacio}}
+
+
+Representa una població.  
+
+
+\subsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_poblacio_ac0183157c2cdadc3ef95d11b6614700a}{Poblacio} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecte. \end{DoxyCompactList}\item 
+\hyperlink{class_individu}{Individu} \hyperlink{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{consultar\+\_\+individu} (string nom)
+\begin{DoxyCompactList}\small\item\em Consultora de l\textquotesingle{}individu corresponent al nom. \end{DoxyCompactList}\item 
+bool \hyperlink{class_poblacio_ac32cb311f3b283b82adf3d0b7d82fbcc}{existeix\+\_\+individu} (string nom)
+\begin{DoxyCompactList}\small\item\em Comprovadora de l\textquotesingle{}existència d\textquotesingle{}un individu. \end{DoxyCompactList}\item 
+void \hyperlink{class_poblacio_ae56d498cf63b075d775968f0f880e9f1}{afegir\+\_\+individu} (string nom, const \hyperlink{class_individu}{Individu} \&p)
+\begin{DoxyCompactList}\small\item\em Inclosora de la població. \end{DoxyCompactList}\item 
+void \hyperlink{class_poblacio_a9e31f2e6394618bc130280322cb24fbf}{reproduir} (string pare, string mare, string fill, \hyperlink{class_especie}{Especie} esp)
+\begin{DoxyCompactList}\small\item\em Reproducció d\textquotesingle{}individus del poble. \end{DoxyCompactList}\item 
+void \hyperlink{class_poblacio_a82a6f322f03527ab4273223f351c1036}{escriure\+\_\+arbre\+\_\+genealogic} (string nom)
+\begin{DoxyCompactList}\small\item\em Escriptora de l\textquotesingle{}arbre geneaològic d\textquotesingle{}un individu. \end{DoxyCompactList}\item 
+void \hyperlink{class_poblacio_abe25acd8c2ce02a747ab79f26cc74f11}{completar\+\_\+arbre} ()
+\begin{DoxyCompactList}\small\item\em Completadora d\textquotesingle{}arbres. \end{DoxyCompactList}\item 
+void \hyperlink{class_poblacio_acef5af456368a81c4f3be0bd44841bf1}{escriure\+\_\+poblacio} () const 
+\begin{DoxyCompactList}\small\item\em Escriptora de la població. \end{DoxyCompactList}\item 
+void \hyperlink{class_poblacio_a29df411fde89d37a05fb705e1cc3dd8b}{llegir} (\hyperlink{class_especie}{Especie} esp)
+\begin{DoxyCompactList}\small\item\em Lectora d\textquotesingle{}un individu de la població. \end{DoxyCompactList}\item 
+void \hyperlink{class_poblacio_a8757ef86688a1e2c25d9264aea934a28}{llegir\+\_\+inicials} (\hyperlink{class_especie}{Especie} esp)
+\begin{DoxyCompactList}\small\item\em Lectora dels primers individus de la població. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_poblacio_aec49e868f8a0373f575ff86579e4f9ad}{buscar\+\_\+ascendent} (\hyperlink{class_individu}{Individu} ind, string nom)
+\begin{DoxyCompactList}\small\item\em Comprovadora d\textquotesingle{}ascendents. \end{DoxyCompactList}\item 
+void \hyperlink{class_poblacio_ad35ab2cc93d5d79061e4bb4829ace045}{buscar\+\_\+arbre} (Arbre$<$ string $>$ \&arbre, string nom)
+\begin{DoxyCompactList}\small\item\em Creadora d\textquotesingle{}arbre complet d\textquotesingle{}un individu. \end{DoxyCompactList}\item 
+bool \hyperlink{class_poblacio_a41f8178d145d0f41094b49256751d8c2}{es\+\_\+arbre\+\_\+parcial} (vector$<$ string $>$ \&resultat, Arbre$<$ string $>$ acomplet, Arbre$<$ string $>$ aparcial)
+\begin{DoxyCompactList}\small\item\em Comprovadora d\textquotesingle{}arbre parcial. \end{DoxyCompactList}\item 
+void \hyperlink{class_poblacio_a0b60d947870b310929e4fc451b13ec01}{llegir\+\_\+arbre\+\_\+parcial} (Arbre$<$ string $>$ \&a)
+\begin{DoxyCompactList}\small\item\em Lectora de l\textquotesingle{}arbre parcial. \end{DoxyCompactList}\item 
+bool \hyperlink{class_poblacio_a1f54c4af151e3e8433f36342db0f984d}{comprovar\+\_\+reproduccio} (string pare, string mare, string fill)
+\begin{DoxyCompactList}\small\item\em Comprovadora de la capacitat de reproducció. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, \hyperlink{class_individu}{Individu} $>$ \hyperlink{class_poblacio_adc5549ea0f51e16440bc4cf0928b0d50}{poble}
+\begin{DoxyCompactList}\small\item\em Representa una població \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripció Detallada}
+Representa una població. 
+
+Permet establir un conjunt d\textquotesingle{}individus indexats per un nom i crear-\/ne o completar-\/ne l\textquotesingle{}arbre geneorològic a partir d\textquotesingle{}un individu. 
+
+Definició a la línia 27 del fitxer Poblacio.\+hh.
+
+
+
+\subsection{Documentació del Constructor i el Destructor}
+\index{Poblacio@{Poblacio}!Poblacio@{Poblacio}}
+\index{Poblacio@{Poblacio}!Poblacio@{Poblacio}}
+\subsubsection[{\texorpdfstring{Poblacio()}{Poblacio()}}]{\setlength{\rightskip}{0pt plus 5cm}Poblacio\+::\+Poblacio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poblacio_ac0183157c2cdadc3ef95d11b6614700a}{}\label{class_poblacio_ac0183157c2cdadc3ef95d11b6614700a}
+
+
+Creadora por defecte. 
+
+S\textquotesingle{}executa automàticament al declarar una població. \begin{DoxyPrecond}{Precondició}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat és una població sense individus. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 9 del fitxer Poblacio.\+cc.
+
+
+\begin{DoxyCode}
+9 \{\}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Funcions Membre}
+\index{Poblacio@{Poblacio}!consultar\+\_\+individu@{consultar\+\_\+individu}}
+\index{consultar\+\_\+individu@{consultar\+\_\+individu}!Poblacio@{Poblacio}}
+\subsubsection[{\texorpdfstring{consultar\+\_\+individu(string nom)}{consultar_individu(string nom)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Individu} Poblacio\+::consultar\+\_\+individu (
+\begin{DoxyParamCaption}
+\item[{string}]{nom}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{}\label{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}
+
+
+Consultora de l\textquotesingle{}individu corresponent al nom. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implicit està inicialitzat, l\textquotesingle{}explícit conté el nom de l\textquotesingle{}individu a buscar. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna l\textquotesingle{}individu que correspon al nom. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 11 del fitxer Poblacio.\+cc.
+
+
+\begin{DoxyCode}
+11                                                \{
+12     
+13     map<string,Individu>::const\_iterator it;
+14     
+15     it = \hyperlink{class_poblacio_adc5549ea0f51e16440bc4cf0928b0d50}{poble}.find(nom);
+16     
+17     \textcolor{keywordflow}{return} (*it).second;
+18     
+19 \}
+\end{DoxyCode}
+\index{Poblacio@{Poblacio}!existeix\+\_\+individu@{existeix\+\_\+individu}}
+\index{existeix\+\_\+individu@{existeix\+\_\+individu}!Poblacio@{Poblacio}}
+\subsubsection[{\texorpdfstring{existeix\+\_\+individu(string nom)}{existeix_individu(string nom)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Poblacio\+::existeix\+\_\+individu (
+\begin{DoxyParamCaption}
+\item[{string}]{nom}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poblacio_ac32cb311f3b283b82adf3d0b7d82fbcc}{}\label{class_poblacio_ac32cb311f3b283b82adf3d0b7d82fbcc}
+
+
+Comprovadora de l\textquotesingle{}existència d\textquotesingle{}un individu. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implicit està inicialitzat, l\textquotesingle{}explícit conté el nom de l\textquotesingle{}individu a comprovar. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Si existeix l\textquotesingle{}individu a la població retrorna cert, en cas contrari, retorna fals. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 21 del fitxer Poblacio.\+cc.
+
+
+\begin{DoxyCode}
+21                                           \{
+22     
+23     \textcolor{keywordflow}{for} (map<string,Individu>::const\_iterator it = \hyperlink{class_poblacio_adc5549ea0f51e16440bc4cf0928b0d50}{poble}.begin(); it != 
+      \hyperlink{class_poblacio_adc5549ea0f51e16440bc4cf0928b0d50}{poble}.end(); it++) \{
+24         \textcolor{keywordflow}{if} ((*it).first == nom) \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+25     \}
+26     
+27     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+28 \}
+\end{DoxyCode}
+\index{Poblacio@{Poblacio}!afegir\+\_\+individu@{afegir\+\_\+individu}}
+\index{afegir\+\_\+individu@{afegir\+\_\+individu}!Poblacio@{Poblacio}}
+\subsubsection[{\texorpdfstring{afegir\+\_\+individu(string nom, const Individu \&p)}{afegir_individu(string nom, const Individu &p)}}]{\setlength{\rightskip}{0pt plus 5cm}void Poblacio\+::afegir\+\_\+individu (
+\begin{DoxyParamCaption}
+\item[{string}]{nom, }
+\item[{const {\bf Individu} \&}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poblacio_ae56d498cf63b075d775968f0f880e9f1}{}\label{class_poblacio_ae56d498cf63b075d775968f0f880e9f1}
+
+
+Inclosora de la població. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implicit està inicialitzat, l\textquotesingle{}explícit conté el nom i l\textquotesingle{}individu a afegir. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}afegeix l\textquotesingle{}individu a la població. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 30 del fitxer Poblacio.\+cc.
+
+
+\begin{DoxyCode}
+30                                                            \{
+31     \hyperlink{class_poblacio_adc5549ea0f51e16440bc4cf0928b0d50}{poble}[nom] = p;
+32 \}
+\end{DoxyCode}
+\index{Poblacio@{Poblacio}!reproduir@{reproduir}}
+\index{reproduir@{reproduir}!Poblacio@{Poblacio}}
+\subsubsection[{\texorpdfstring{reproduir(string pare, string mare, string fill, Especie esp)}{reproduir(string pare, string mare, string fill, Especie esp)}}]{\setlength{\rightskip}{0pt plus 5cm}void Poblacio\+::reproduir (
+\begin{DoxyParamCaption}
+\item[{string}]{pare, }
+\item[{string}]{mare, }
+\item[{string}]{fill, }
+\item[{{\bf Especie}}]{esp}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poblacio_a9e31f2e6394618bc130280322cb24fbf}{}\label{class_poblacio_a9e31f2e6394618bc130280322cb24fbf}
+
+
+Reproducció d\textquotesingle{}individus del poble. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implicit està inicialitzat, l\textquotesingle{}explícit conté el dels pares, el de l\textquotesingle{}individu a afegir i l\textquotesingle{}espècie. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Si és possible la reproducció, s\textquotesingle{}afegeix el fill al poble, en cas contrari es retornarà l\textquotesingle{}error corresponent. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 36 del fitxer Poblacio.\+cc.
+
+
+\begin{DoxyCode}
+36                                                                           \{
+37     
+38     \textcolor{keywordflow}{if} (\hyperlink{class_poblacio_a1f54c4af151e3e8433f36342db0f984d}{comprovar\_reproduccio}(pare, mare, fill))\{
+39         
+40     \hyperlink{class_individu}{Individu} ind;
+41     
+42     ind.\hyperlink{class_individu_a38c1693172190ae30f0577a3d5459b94}{reproduir}(\hyperlink{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{consultar\_individu}(pare), 
+      \hyperlink{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{consultar\_individu}(mare), pare, mare, esp);
+43     
+44     \hyperlink{class_poblacio_ae56d498cf63b075d775968f0f880e9f1}{afegir\_individu}(fill, ind);
+45     \}
+46 \}
+\end{DoxyCode}
+\index{Poblacio@{Poblacio}!escriure\+\_\+arbre\+\_\+genealogic@{escriure\+\_\+arbre\+\_\+genealogic}}
+\index{escriure\+\_\+arbre\+\_\+genealogic@{escriure\+\_\+arbre\+\_\+genealogic}!Poblacio@{Poblacio}}
+\subsubsection[{\texorpdfstring{escriure\+\_\+arbre\+\_\+genealogic(string nom)}{escriure_arbre_genealogic(string nom)}}]{\setlength{\rightskip}{0pt plus 5cm}void Poblacio\+::escriure\+\_\+arbre\+\_\+genealogic (
+\begin{DoxyParamCaption}
+\item[{string}]{nom}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poblacio_a82a6f322f03527ab4273223f351c1036}{}\label{class_poblacio_a82a6f322f03527ab4273223f351c1036}
+
+
+Escriptora de l\textquotesingle{}arbre geneaològic d\textquotesingle{}un individu. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implicit està inicialitzat. Es prepara pel canal d\textquotesingle{}entrada el nom de l\textquotesingle{}individu que serà l\textquotesingle{}arrel de l\textquotesingle{}arbre. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}imprimeix pel canal d\textquotesingle{}entrada l\textquotesingle{}arbre complet, per nivells, amb arrel establerta a l\textquotesingle{}individu. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 49 del fitxer Poblacio.\+cc.
+
+
+\begin{DoxyCode}
+49                                                   \{
+50     cout << \textcolor{stringliteral}{"escribir\_arbol\_genealogico "} << nom << endl;
+51     
+52     \textcolor{keywordflow}{if} (\hyperlink{class_poblacio_ac32cb311f3b283b82adf3d0b7d82fbcc}{existeix\_individu}(nom))\{
+53         Arbre<string> complet;
+54         
+55         queue<string> cua\_nom;
+56         queue<int> cua\_niv;
+57         
+58         cua\_nom.push(nom);
+59         
+60         cua\_niv.push(0);
+61         
+62         \textcolor{keywordtype}{int} nivell = -1;
+63         
+64         \textcolor{keywordflow}{while} (not cua\_nom.empty()) \{
+65             
+66             \textcolor{keywordflow}{if} (\hyperlink{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{consultar\_individu}(cua\_nom.front()).consultar\_pare() != \textcolor{stringliteral}{"$"}) \{
+67                 cua\_nom.push(\hyperlink{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{consultar\_individu}(cua\_nom.front()).consultar\_pare());
+68                 cua\_niv.push(cua\_niv.front()+1);
+69                 
+70                 cua\_nom.push(\hyperlink{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{consultar\_individu}(cua\_nom.front()).consultar\_mare());
+71                 cua\_niv.push(cua\_niv.front()+1);
+72             \}
+73             
+74             \textcolor{keywordflow}{if} (nivell != cua\_niv.front()) \{
+75                 \textcolor{keywordflow}{if} (nivell != -1) cout << endl;
+76                 nivell = cua\_niv.front();
+77                 cout << \textcolor{stringliteral}{"  Nivel "} << nivell << \textcolor{charliteral}{':'};
+78             \}
+79             
+80             cout << \textcolor{stringliteral}{" "} << cua\_nom.front();
+81             
+82             cua\_nom.pop();
+83             cua\_niv.pop();
+84         \}
+85         
+86         cout << endl;
+87 
+88         
+89     \}
+90     
+91     \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"  error"} << endl;
+92 \}
+\end{DoxyCode}
+\index{Poblacio@{Poblacio}!completar\+\_\+arbre@{completar\+\_\+arbre}}
+\index{completar\+\_\+arbre@{completar\+\_\+arbre}!Poblacio@{Poblacio}}
+\subsubsection[{\texorpdfstring{completar\+\_\+arbre()}{completar_arbre()}}]{\setlength{\rightskip}{0pt plus 5cm}void Poblacio\+::completar\+\_\+arbre (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poblacio_abe25acd8c2ce02a747ab79f26cc74f11}{}\label{class_poblacio_abe25acd8c2ce02a747ab79f26cc74f11}
+
+
+Completadora d\textquotesingle{}arbres. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implicit està inicialitzat. Es preparen pel canal d\textquotesingle{}entrada el nom dels individus coneguts d\textquotesingle{}un arbre geneaològic. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}imprimeix pel canal de sortida l\textquotesingle{}arbre complet amb arrel establerta a l\textquotesingle{}individu, marcant les individus que faltaven a l\textquotesingle{}arbre d\textquotesingle{}entrada amb {\bfseries $\ast$nom\+\_\+individu$\ast$}. Si l\textquotesingle{}arbre d\textquotesingle{}entrada no fos parcial (hi haguessin incoherències o es tractés d\textquotesingle{}un arbre complet) es mostrarà {\bfseries \char`\"{}no es arbol parcial\char`\"{}} pel canal de sortida. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 94 del fitxer Poblacio.\+cc.
+
+
+\begin{DoxyCode}
+94                               \{
+95     
+96     Arbre<string> aparcial, acomplet;
+97     
+98     \hyperlink{class_poblacio_a0b60d947870b310929e4fc451b13ec01}{llegir\_arbre\_parcial}(aparcial);
+99     
+100     cout << \textcolor{stringliteral}{"completar\_arbol\_genealogico "} << aparcial.arrel() << endl;
+101     
+102     \textcolor{keywordtype}{bool} valid = \hyperlink{class_poblacio_ac32cb311f3b283b82adf3d0b7d82fbcc}{existeix\_individu}(aparcial.arrel());
+103     
+104     \textcolor{keywordflow}{if} (valid) \{
+105     
+106         \hyperlink{class_poblacio_ad35ab2cc93d5d79061e4bb4829ace045}{buscar\_arbre}(acomplet, aparcial.arrel());
+107         
+108         vector<string> resultat;
+109         
+110         \textcolor{keywordtype}{bool} parcial = \hyperlink{class_poblacio_a41f8178d145d0f41094b49256751d8c2}{es\_arbre\_parcial}(resultat, acomplet, aparcial);
+111         
+112         \textcolor{keywordflow}{if} (parcial) \{
+113             cout << \textcolor{stringliteral}{"  "};
+114             
+115             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < resultat.size(); i++)\{
+116                 cout << resultat[i];
+117                 \textcolor{keywordflow}{if} (i != resultat.size()-1) cout << \textcolor{charliteral}{' '};
+118             \}
+119             
+120             cout << endl;
+121             
+122         \}
+123         
+124         \textcolor{keywordflow}{else} valid = \textcolor{keyword}{false};
+125     
+126     \}
+127     
+128     \textcolor{keywordflow}{if} (not valid) cout << \textcolor{stringliteral}{"  no es arbol parcial"} << endl;
+129     
+130     
+131 \}
+\end{DoxyCode}
+\index{Poblacio@{Poblacio}!escriure\+\_\+poblacio@{escriure\+\_\+poblacio}}
+\index{escriure\+\_\+poblacio@{escriure\+\_\+poblacio}!Poblacio@{Poblacio}}
+\subsubsection[{\texorpdfstring{escriure\+\_\+poblacio() const }{escriure_poblacio() const }}]{\setlength{\rightskip}{0pt plus 5cm}void Poblacio\+::escriure\+\_\+poblacio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_poblacio_acef5af456368a81c4f3be0bd44841bf1}{}\label{class_poblacio_acef5af456368a81c4f3be0bd44841bf1}
+
+
+Escriptora de la població. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implicit està inicialitzat. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}imprimeix pel canal de sortida tots els individus que formen la població per ordre alfabètic, amb el seu sexe i els noms del pare i de la mare. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 136 del fitxer Poblacio.\+cc.
+
+
+\begin{DoxyCode}
+136                                       \{
+137     
+138     cout << \textcolor{stringliteral}{"escribir\_poblacion"} << endl;
+139     
+140     \textcolor{keywordflow}{for} (map<string,Individu>::const\_iterator it = \hyperlink{class_poblacio_adc5549ea0f51e16440bc4cf0928b0d50}{poble}.begin(); it != 
+      \hyperlink{class_poblacio_adc5549ea0f51e16440bc4cf0928b0d50}{poble}.end(); it++) \{
+141         cout << \textcolor{stringliteral}{"  "} << (*it).first << \textcolor{stringliteral}{" X"} << (*it).second.consultar\_sexe() << \textcolor{stringliteral}{" ("} << (*it).second.
+      consultar\_pare() << \textcolor{charliteral}{','} << (*it).second.consultar\_mare() << \textcolor{charliteral}{')'} << endl;
+142     \}
+143 
+144 \}
+\end{DoxyCode}
+\index{Poblacio@{Poblacio}!llegir@{llegir}}
+\index{llegir@{llegir}!Poblacio@{Poblacio}}
+\subsubsection[{\texorpdfstring{llegir(\+Especie esp)}{llegir(Especie esp)}}]{\setlength{\rightskip}{0pt plus 5cm}void Poblacio\+::llegir (
+\begin{DoxyParamCaption}
+\item[{{\bf Especie}}]{esp}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poblacio_a29df411fde89d37a05fb705e1cc3dd8b}{}\label{class_poblacio_a29df411fde89d37a05fb705e1cc3dd8b}
+
+
+Lectora d\textquotesingle{}un individu de la població. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implicit està inicialitzat i l\textquotesingle{}explicit conté la espècie del individu a llegir. Es prepara pel canal d\textquotesingle{}entrada el nom de l\textquotesingle{}individu. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Si l\textquotesingle{}individu no existeix a la població, s\textquotesingle{}hi afegeix. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 147 del fitxer Poblacio.\+cc.
+
+
+\begin{DoxyCode}
+147                                 \{
+148     
+149     \textcolor{keywordtype}{string} nom;
+150 
+151     cin >> nom;
+152     
+153     cout << \textcolor{stringliteral}{"anadir\_individuo "} << nom << endl;
+154     
+155     \textcolor{keywordflow}{if} (not \hyperlink{class_poblacio_ac32cb311f3b283b82adf3d0b7d82fbcc}{existeix\_individu}(nom)) \{
+156         \hyperlink{class_individu}{Individu} ind;
+157         ind.\hyperlink{class_individu_ad0f73f2395d08a8d9de8604c2bede4d6}{llegir\_individu}(esp);
+158 
+159         \hyperlink{class_poblacio_ae56d498cf63b075d775968f0f880e9f1}{afegir\_individu}(nom,ind);
+160     \}
+161     
+162     \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"  error"} << endl;
+163 
+164 \}
+\end{DoxyCode}
+\index{Poblacio@{Poblacio}!llegir\+\_\+inicials@{llegir\+\_\+inicials}}
+\index{llegir\+\_\+inicials@{llegir\+\_\+inicials}!Poblacio@{Poblacio}}
+\subsubsection[{\texorpdfstring{llegir\+\_\+inicials(\+Especie esp)}{llegir_inicials(Especie esp)}}]{\setlength{\rightskip}{0pt plus 5cm}void Poblacio\+::llegir\+\_\+inicials (
+\begin{DoxyParamCaption}
+\item[{{\bf Especie}}]{esp}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poblacio_a8757ef86688a1e2c25d9264aea934a28}{}\label{class_poblacio_a8757ef86688a1e2c25d9264aea934a28}
+
+
+Lectora dels primers individus de la població. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implicit està inicialitzat i l\textquotesingle{}explicit conté la espècie del individu a llegir. Es preparen pel canal d\textquotesingle{}entrada el número d\textquotesingle{}individus inicials i els noms dels individus. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}afegeixen els individus a la població amb els pares establerts a \char`\"{}\$\char`\"{} 
+\end{DoxyPostcond}
+
+
+Definició a la línia 166 del fitxer Poblacio.\+cc.
+
+
+\begin{DoxyCode}
+166                                          \{
+167     \textcolor{keywordtype}{int} ninicials;
+168     
+169     cin >> ninicials;
+170     
+171     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < ninicials; i++) \{
+172         \hyperlink{class_individu}{Individu} ind;
+173         \textcolor{keywordtype}{string} nom;
+174         
+175         cin >> nom;
+176         
+177         ind.\hyperlink{class_individu_ad0f73f2395d08a8d9de8604c2bede4d6}{llegir\_individu}(esp);
+178         
+179         \hyperlink{class_poblacio_ae56d498cf63b075d775968f0f880e9f1}{afegir\_individu}(nom,ind);
+180     \}
+181 \}
+\end{DoxyCode}
+\index{Poblacio@{Poblacio}!buscar\+\_\+ascendent@{buscar\+\_\+ascendent}}
+\index{buscar\+\_\+ascendent@{buscar\+\_\+ascendent}!Poblacio@{Poblacio}}
+\subsubsection[{\texorpdfstring{buscar\+\_\+ascendent(\+Individu ind, string nom)}{buscar_ascendent(Individu ind, string nom)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Poblacio\+::buscar\+\_\+ascendent (
+\begin{DoxyParamCaption}
+\item[{{\bf Individu}}]{ind, }
+\item[{string}]{nom}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_poblacio_aec49e868f8a0373f575ff86579e4f9ad}{}\label{class_poblacio_aec49e868f8a0373f575ff86579e4f9ad}
+
+
+Comprovadora d\textquotesingle{}ascendents. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre explicit conté l\textquotesingle{}individu del qual es vol coneixer si el segon paràmetre, el nom de l\textquotesingle{}individu a buscar, és un ascendent seu. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Si el nom és un ascendent de l\textquotesingle{}individu es retorna cert, en cas contrari es retorna fals.. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 187 del fitxer Poblacio.\+cc.
+
+
+\begin{DoxyCode}
+187                                                        \{
+188     
+189     \textcolor{keywordtype}{bool} resultat = \textcolor{keyword}{false};
+190     
+191     \textcolor{keywordflow}{if} (ind.\hyperlink{class_individu_a46a9823e9287c90d0ad58d494317ea65}{consultar\_mare}() == nom or ind.\hyperlink{class_individu_a0807da1b89bb753f7bb92e1c39cefa44}{consultar\_pare}() == nom) resultat = \textcolor{keyword}{
+      true};
+192     
+193     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ind.\hyperlink{class_individu_a0807da1b89bb753f7bb92e1c39cefa44}{consultar\_pare}() != \textcolor{stringliteral}{"$"}) \{
+194         resultat = \hyperlink{class_poblacio_aec49e868f8a0373f575ff86579e4f9ad}{buscar\_ascendent}(\hyperlink{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{consultar\_individu}(ind.
+      \hyperlink{class_individu_a0807da1b89bb753f7bb92e1c39cefa44}{consultar\_pare}()), nom);
+195         \textcolor{keywordflow}{if} (not resultat) resultat = \hyperlink{class_poblacio_aec49e868f8a0373f575ff86579e4f9ad}{buscar\_ascendent}(
+      \hyperlink{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{consultar\_individu}(ind.\hyperlink{class_individu_a46a9823e9287c90d0ad58d494317ea65}{consultar\_mare}()), nom);
+196     \}
+197     
+198     \textcolor{keywordflow}{return} resultat;
+199     
+200 \}
+\end{DoxyCode}
+\index{Poblacio@{Poblacio}!buscar\+\_\+arbre@{buscar\+\_\+arbre}}
+\index{buscar\+\_\+arbre@{buscar\+\_\+arbre}!Poblacio@{Poblacio}}
+\subsubsection[{\texorpdfstring{buscar\+\_\+arbre(\+Arbre$<$ string $>$ \&arbre, string nom)}{buscar_arbre(Arbre< string > &arbre, string nom)}}]{\setlength{\rightskip}{0pt plus 5cm}void Poblacio\+::buscar\+\_\+arbre (
+\begin{DoxyParamCaption}
+\item[{Arbre$<$ string $>$ \&}]{arbre, }
+\item[{string}]{nom}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_poblacio_ad35ab2cc93d5d79061e4bb4829ace045}{}\label{class_poblacio_ad35ab2cc93d5d79061e4bb4829ace045}
+
+
+Creadora d\textquotesingle{}arbre complet d\textquotesingle{}un individu. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre explicit conté l\textquotesingle{}arbre a omplir i el nom de l\textquotesingle{}individu del qual volem crear l\textquotesingle{}arbre complet (cert). 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es retorna per referència l\textquotesingle{}arbre complet corresponent al nom de l\textquotesingle{}individu del paràmetre explicit. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 202 del fitxer Poblacio.\+cc.
+
+
+\begin{DoxyCode}
+202                                                            \{
+203     
+204     Arbre<string> a1, a2;
+205     
+206     \textcolor{keywordflow}{if} (nom != \textcolor{stringliteral}{"$"})\{
+207         \hyperlink{class_poblacio_ad35ab2cc93d5d79061e4bb4829ace045}{buscar\_arbre}(a1, \hyperlink{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{consultar\_individu}(nom).consultar\_pare());
+208         \hyperlink{class_poblacio_ad35ab2cc93d5d79061e4bb4829ace045}{buscar\_arbre}(a2, \hyperlink{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{consultar\_individu}(nom).consultar\_mare());
+209         arbre.plantar(nom, a1, a2);
+210     \}
+211     
+212     \textcolor{keywordflow}{else} arbre.plantar(nom, a1, a2);
+213     
+214 \}
+\end{DoxyCode}
+\index{Poblacio@{Poblacio}!es\+\_\+arbre\+\_\+parcial@{es\+\_\+arbre\+\_\+parcial}}
+\index{es\+\_\+arbre\+\_\+parcial@{es\+\_\+arbre\+\_\+parcial}!Poblacio@{Poblacio}}
+\subsubsection[{\texorpdfstring{es\+\_\+arbre\+\_\+parcial(vector$<$ string $>$ \&resultat, Arbre$<$ string $>$ acomplet, Arbre$<$ string $>$ aparcial)}{es_arbre_parcial(vector< string > &resultat, Arbre< string > acomplet, Arbre< string > aparcial)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Poblacio\+::es\+\_\+arbre\+\_\+parcial (
+\begin{DoxyParamCaption}
+\item[{vector$<$ string $>$ \&}]{resultat, }
+\item[{Arbre$<$ string $>$}]{acomplet, }
+\item[{Arbre$<$ string $>$}]{aparcial}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_poblacio_a41f8178d145d0f41094b49256751d8c2}{}\label{class_poblacio_a41f8178d145d0f41094b49256751d8c2}
+
+
+Comprovadora d\textquotesingle{}arbre parcial. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre explícit conté el vector a retornar en cas que sigui arbre parcial, l\textquotesingle{}arbre complet amb el qual volem comparar l\textquotesingle{}arbre parcial, que és el tercer paràmetre. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es retorna cert si es tracta d\textquotesingle{}un arbre parcial i es retorna per referència un vector amb l\textquotesingle{}arbre parcial completat. En cas contrari, es retorna fals. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 216 del fitxer Poblacio.\+cc.
+
+
+\begin{DoxyCode}
+216                                                                                                           \{
+217     
+218     \textcolor{keywordtype}{bool} resultat = \textcolor{keyword}{true};
+219     
+220     
+221     
+222     \textcolor{keywordflow}{if} (not acomplet.es\_buit()) \{
+223         \textcolor{keywordflow}{if} (aparcial.es\_buit()) \{ \textcolor{comment}{// Si s'ha acabat l'arbre parcial afegim el que queda}
+224             
+225             \textcolor{keywordflow}{if} (acomplet.arrel() != \textcolor{stringliteral}{"$"}) vecresultat.push\_back(\textcolor{stringliteral}{"*"}+acomplet.arrel()+\textcolor{stringliteral}{"*"});
+226             \textcolor{keywordflow}{else} vecresultat.push\_back(acomplet.arrel());
+227             
+228         \}
+229         
+230         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (aparcial.arrel() == \textcolor{stringliteral}{"$"} and  acomplet.arrel() != \textcolor{stringliteral}{"$"})\{
+231             
+232             vecresultat.push\_back(\textcolor{stringliteral}{"*"}+acomplet.arrel()+\textcolor{stringliteral}{"*"});
+233             
+234         \}
+235         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (aparcial.arrel() == acomplet.arrel())\{
+236             
+237             vecresultat.push\_back(acomplet.arrel());
+238         \}
+239         
+240         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (aparcial.arrel() != acomplet.arrel()) \{
+241             resultat = \textcolor{keyword}{false};
+242         \}
+243         
+244         \textcolor{keywordflow}{if} (resultat) \{
+245             Arbre<string> ac1, ac2, ap1, ap2;
+246             
+247             acomplet.fills(ac1, ac2);
+248             \textcolor{keywordflow}{if} (not aparcial.es\_buit()) aparcial.fills(ap1, ap2);
+249             \textcolor{keywordflow}{if} (resultat) resultat = \hyperlink{class_poblacio_a41f8178d145d0f41094b49256751d8c2}{es\_arbre\_parcial}(vecresultat, ac1, ap1);
+250             \textcolor{keywordflow}{if} (resultat) resultat = \hyperlink{class_poblacio_a41f8178d145d0f41094b49256751d8c2}{es\_arbre\_parcial}(vecresultat, ac2, ap2);
+251         \}
+252         
+253     \}
+254     
+255     \textcolor{keywordflow}{return} resultat;
+256 \}
+\end{DoxyCode}
+\index{Poblacio@{Poblacio}!llegir\+\_\+arbre\+\_\+parcial@{llegir\+\_\+arbre\+\_\+parcial}}
+\index{llegir\+\_\+arbre\+\_\+parcial@{llegir\+\_\+arbre\+\_\+parcial}!Poblacio@{Poblacio}}
+\subsubsection[{\texorpdfstring{llegir\+\_\+arbre\+\_\+parcial(\+Arbre$<$ string $>$ \&a)}{llegir_arbre_parcial(Arbre< string > &a)}}]{\setlength{\rightskip}{0pt plus 5cm}void Poblacio\+::llegir\+\_\+arbre\+\_\+parcial (
+\begin{DoxyParamCaption}
+\item[{Arbre$<$ string $>$ \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_poblacio_a0b60d947870b310929e4fc451b13ec01}{}\label{class_poblacio_a0b60d947870b310929e4fc451b13ec01}
+
+
+Lectora de l\textquotesingle{}arbre parcial. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre explicit conté l\textquotesingle{}arbre que es retornarà. Pel canal d\textquotesingle{}entrada es preparen els noms dels individus coneguts d\textquotesingle{}un arbre genealògic. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es retorna per referència l\textquotesingle{}arbre parcial que s\textquotesingle{}ha llegit a través del canal d\textquotesingle{}entrada. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 258 del fitxer Poblacio.\+cc.
+
+
+\begin{DoxyCode}
+258                                                    \{
+259     
+260     Arbre<string> a1, a2;
+261     \textcolor{keywordtype}{string} nom;
+262     cin >> nom;
+263     
+264     \textcolor{keywordflow}{if} (nom != \textcolor{stringliteral}{"$"}) \{
+265         \hyperlink{class_poblacio_a0b60d947870b310929e4fc451b13ec01}{llegir\_arbre\_parcial}(a1);
+266         \hyperlink{class_poblacio_a0b60d947870b310929e4fc451b13ec01}{llegir\_arbre\_parcial}(a2);
+267         a.plantar(nom,a1,a2);
+268     \}
+269     
+270     \textcolor{keywordflow}{else} a.plantar(nom, a1, a2);
+271     
+272 \}
+\end{DoxyCode}
+\index{Poblacio@{Poblacio}!comprovar\+\_\+reproduccio@{comprovar\+\_\+reproduccio}}
+\index{comprovar\+\_\+reproduccio@{comprovar\+\_\+reproduccio}!Poblacio@{Poblacio}}
+\subsubsection[{\texorpdfstring{comprovar\+\_\+reproduccio(string pare, string mare, string fill)}{comprovar_reproduccio(string pare, string mare, string fill)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Poblacio\+::comprovar\+\_\+reproduccio (
+\begin{DoxyParamCaption}
+\item[{string}]{pare, }
+\item[{string}]{mare, }
+\item[{string}]{fill}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_poblacio_a1f54c4af151e3e8433f36342db0f984d}{}\label{class_poblacio_a1f54c4af151e3e8433f36342db0f984d}
+
+
+Comprovadora de la capacitat de reproducció. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implicit està inicialitzat, l\textquotesingle{}explícit conté el dels pares i el de l\textquotesingle{}individu a afegir. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna cert si els els compleixen les condicions per poder-\/se reproduïr i el fill no existeix fins al moment. En cas contrari, retorna fals i s\textquotesingle{}escriu l\textquotesingle{}error corresponent pel canal de sortida. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 274 del fitxer Poblacio.\+cc.
+
+
+\begin{DoxyCode}
+274                                                                             \{
+275     
+276     cout << \textcolor{stringliteral}{"reproduccion\_sexual "} << nmare << \textcolor{charliteral}{' '} << npare << \textcolor{charliteral}{' '} << nfill << endl;
+277     
+278     \textcolor{keywordtype}{bool} resultat = \hyperlink{class_poblacio_ac32cb311f3b283b82adf3d0b7d82fbcc}{existeix\_individu}(npare) and 
+      \hyperlink{class_poblacio_ac32cb311f3b283b82adf3d0b7d82fbcc}{existeix\_individu}(nmare); \textcolor{comment}{// Cert si el nom dels pares estàn al sistema}
+279     
+280     if (resultat) resultat = not \hyperlink{class_poblacio_ac32cb311f3b283b82adf3d0b7d82fbcc}{existeix\_individu}(nfill); \textcolor{comment}{// Cert si el nom del fill no
+       apareix al sistema}
+281     
+282     if (not resultat) cout << "  error" << endl; \textcolor{comment}{// Primer punt d'error}
+283     
+284     else \{
+285         
+286         resultat = \hyperlink{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{consultar\_individu}(npare).\hyperlink{class_individu_a06f4e5e857afbbcf9599d04c54a4f3a1}{consultar\_sexe}() == \textcolor{charliteral}{'Y'} and 
+      \hyperlink{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{consultar\_individu}(nmare).\hyperlink{class_individu_a06f4e5e857afbbcf9599d04c54a4f3a1}{consultar\_sexe}() == \textcolor{charliteral}{'X'}; \textcolor{comment}{//  Cert si pare: Y i
+       mare: X}
+287         
+288         \textcolor{keywordflow}{if} (resultat and (\hyperlink{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{consultar\_individu}(npare).consultar\_pare() != \textcolor{stringliteral}{"$"})) \{
+289             
+290             resultat = (\hyperlink{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{consultar\_individu}(npare).
+      \hyperlink{class_individu_a0807da1b89bb753f7bb92e1c39cefa44}{consultar\_pare}() != \hyperlink{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{consultar\_individu}(nmare).
+      \hyperlink{class_individu_a0807da1b89bb753f7bb92e1c39cefa44}{consultar\_pare}()) and (\hyperlink{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{consultar\_individu}(npare).
+      \hyperlink{class_individu_a46a9823e9287c90d0ad58d494317ea65}{consultar\_mare}() != \hyperlink{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{consultar\_individu}(nmare).
+      \hyperlink{class_individu_a46a9823e9287c90d0ad58d494317ea65}{consultar\_mare}()); \textcolor{comment}{// Cert si el pare i la mare no són germans (no tenen el mateix pare)}
+291         \}
+292         
+293         \textcolor{keywordflow}{if} (resultat) resultat = not \hyperlink{class_poblacio_aec49e868f8a0373f575ff86579e4f9ad}{buscar\_ascendent}(
+      \hyperlink{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{consultar\_individu}(npare), nmare); \textcolor{comment}{// Cert si el la mare no és ascendent del pare}
+294         
+295         \textcolor{keywordflow}{if} (resultat) resultat = not \hyperlink{class_poblacio_aec49e868f8a0373f575ff86579e4f9ad}{buscar\_ascendent}(
+      \hyperlink{class_poblacio_a0574c7b81e2b8329fb2ffcd0b4365a98}{consultar\_individu}(nmare), npare); \textcolor{comment}{// Cert si el la mare no és ascendent de la mare}
+296         
+297         \textcolor{keywordflow}{if} (not resultat) cout << \textcolor{stringliteral}{"  no es posible reproduccion"} << endl;
+298     \}
+299     
+300     
+301     
+302     \textcolor{keywordflow}{return} resultat;
+303     
+304 \}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Dades Membre}
+\index{Poblacio@{Poblacio}!poble@{poble}}
+\index{poble@{poble}!Poblacio@{Poblacio}}
+\subsubsection[{\texorpdfstring{poble}{poble}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string,{\bf Individu}$>$ Poblacio\+::poble\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_poblacio_adc5549ea0f51e16440bc4cf0928b0d50}{}\label{class_poblacio_adc5549ea0f51e16440bc4cf0928b0d50}
+
+
+Representa una població 
+
+Enllaça els individus pel seu nom i està ordenat per ordre alfabètic 
+
+Definició a la línia 33 del fitxer Poblacio.\+hh.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir dels següents fitxers\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_poblacio_8hh}{Poblacio.\+hh}\item 
+\hyperlink{_poblacio_8cc}{Poblacio.\+cc}\end{DoxyCompactItemize}

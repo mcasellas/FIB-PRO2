@@ -1,0 +1,388 @@
+\hypertarget{class_individu}{}\section{Referència de la Classe Individu}
+\label{class_individu}\index{Individu@{Individu}}
+
+
+Representa un individu.  
+
+
+\subsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_individu_ac35091404cfbf11946694806aefa9e7e}{Individu} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecte. \end{DoxyCompactList}\item 
+void \hyperlink{class_individu_a38c1693172190ae30f0577a3d5459b94}{reproduir} (\hyperlink{class_individu}{Individu} \hyperlink{class_individu_acd37349b1c7db6e07cd88eade7c622c0}{pare}, \hyperlink{class_individu}{Individu} \hyperlink{class_individu_ae64702bb96cec3867674fb52d6a310e7}{mare}, string npare, string nmare, const \hyperlink{class_especie}{Especie} \&esp)
+\begin{DoxyCompactList}\small\item\em Creadora d\textquotesingle{}un nou individu mitjançant la reproducció. \end{DoxyCompactList}\item 
+char \hyperlink{class_individu_a06f4e5e857afbbcf9599d04c54a4f3a1}{consultar\+\_\+sexe} () const 
+\begin{DoxyCompactList}\small\item\em Consultora del sexe de l\textquotesingle{}individu. \end{DoxyCompactList}\item 
+string \hyperlink{class_individu_a0807da1b89bb753f7bb92e1c39cefa44}{consultar\+\_\+pare} () const 
+\begin{DoxyCompactList}\small\item\em Consultora del nom del pare de l\textquotesingle{}individu. \end{DoxyCompactList}\item 
+string \hyperlink{class_individu_a46a9823e9287c90d0ad58d494317ea65}{consultar\+\_\+mare} () const 
+\begin{DoxyCompactList}\small\item\em Consultora del nom de la mare de l\textquotesingle{}individu. \end{DoxyCompactList}\item 
+void \hyperlink{class_individu_a66e02b3d1a7e327ffb152c1e6193407a}{escriure\+\_\+genotip} () const 
+\begin{DoxyCompactList}\small\item\em Escriptora del genotip de l\textquotesingle{}individu. \end{DoxyCompactList}\item 
+void \hyperlink{class_individu_ad0f73f2395d08a8d9de8604c2bede4d6}{llegir\+\_\+individu} (\hyperlink{class_especie}{Especie} esp)
+\begin{DoxyCompactList}\small\item\em Lectora de la informació d\textquotesingle{}un nou individu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_parell__cromosomes}{Parell\+\_\+cromosomes} \hyperlink{class_individu_a1493ec6bfadc929b425bebb0c1a3a9c9}{consultar\+\_\+parell\+\_\+cromosomes} (int i)
+\begin{DoxyCompactList}\small\item\em Consultora d\textquotesingle{}un parell de cromosomes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{class_individu_a978281da58a84f7e4b8f3b9645cc6ec1}{sexe}
+\begin{DoxyCompactList}\small\item\em Representa el sexe de l\textquotesingle{}individu. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_parell__cromosomes}{Parell\+\_\+cromosomes} $>$ \hyperlink{class_individu_a9e3ff2f5573b349ddb98dff46b11e143}{adn}
+\begin{DoxyCompactList}\small\item\em Vector que conté les dades genètiques. \end{DoxyCompactList}\item 
+string \hyperlink{class_individu_acd37349b1c7db6e07cd88eade7c622c0}{pare}
+\begin{DoxyCompactList}\small\item\em Nom del pare de l\textquotesingle{}individu. \end{DoxyCompactList}\item 
+string \hyperlink{class_individu_ae64702bb96cec3867674fb52d6a310e7}{mare}
+\begin{DoxyCompactList}\small\item\em Nom de la mare de l\textquotesingle{}individu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripció Detallada}
+Representa un individu. 
+
+Permet llegir i consultar les dades que caracteritzen un individu de l\textquotesingle{}espècie. 
+
+Definició a la línia 23 del fitxer Individu.\+hh.
+
+
+
+\subsection{Documentació del Constructor i el Destructor}
+\index{Individu@{Individu}!Individu@{Individu}}
+\index{Individu@{Individu}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{Individu()}{Individu()}}]{\setlength{\rightskip}{0pt plus 5cm}Individu\+::\+Individu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_individu_ac35091404cfbf11946694806aefa9e7e}{}\label{class_individu_ac35091404cfbf11946694806aefa9e7e}
+
+
+Creadora por defecte. 
+
+S\textquotesingle{}executa automàticament al declarar un individu. \begin{DoxyPrecond}{Precondició}
+{\itshape Cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+El resultat és un individu sense dades. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 9 del fitxer Individu.\+cc.
+
+
+\begin{DoxyCode}
+9 \{\}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Funcions Membre}
+\index{Individu@{Individu}!reproduir@{reproduir}}
+\index{reproduir@{reproduir}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{reproduir(\+Individu pare, Individu mare, string npare, string nmare, const Especie \&esp)}{reproduir(Individu pare, Individu mare, string npare, string nmare, const Especie &esp)}}]{\setlength{\rightskip}{0pt plus 5cm}void Individu\+::reproduir (
+\begin{DoxyParamCaption}
+\item[{{\bf Individu}}]{pare, }
+\item[{{\bf Individu}}]{mare, }
+\item[{string}]{npare, }
+\item[{string}]{nmare, }
+\item[{const {\bf Especie} \&}]{esp}
+\end{DoxyParamCaption}
+)}\hypertarget{class_individu_a38c1693172190ae30f0577a3d5459b94}{}\label{class_individu_a38c1693172190ae30f0577a3d5459b94}
+
+
+Creadora d\textquotesingle{}un nou individu mitjançant la reproducció. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implicit està inicialitzat, l\textquotesingle{}explícit conté els individus que formaran la genètica del possible fill, els seus noms i el nom del possible fill. Es preparen pel canal d\textquotesingle{}entrada N parells de cromosomes que s\textquotesingle{}usaràn per el creuament i el seu punt de tall. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Si la reproducció és possible, es definirà l\textquotesingle{}individu del paràmetre implicit. Si algun dels dos pares no existeix o el nom del fill ja ha estat usat es mostrarà el missatge {\bfseries \char`\"{}error\char`\"{}}. En cas de no ser possible la reproducció es mostrarà el missatge {\bfseries \char`\"{}no es possible reproduccion\char`\"{}}. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 11 del fitxer Individu.\+cc.
+
+
+\begin{DoxyCode}
+11                                                                                                           \{
+12     
+13         \textcolor{keywordtype}{int} cromo\_mare, cromo\_pare, punt\_tall;
+14         
+15         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i <= esp.\hyperlink{class_especie_ab8a394dfdea959e383645ae90d0086ca}{consultar\_n}(); i++) \{ \textcolor{comment}{// Cromosoma a cromosoma}
+16   
+17             cin >> cromo\_mare >> cromo\_pare >> punt\_tall;
+18             
+19             \textcolor{keywordflow}{if} (i == 0) \{
+20                 \textcolor{keywordflow}{if} (cromo\_pare == 1) \hyperlink{class_individu_a978281da58a84f7e4b8f3b9645cc6ec1}{sexe} = \textcolor{charliteral}{'Y'};
+21                 \textcolor{keywordflow}{else} \hyperlink{class_individu_a978281da58a84f7e4b8f3b9645cc6ec1}{sexe} = \textcolor{charliteral}{'X'};
+22             \}
+23             
+24             \hyperlink{class_parell__cromosomes}{Parell\_cromosomes} par\_result;
+25             
+26       
+27             
+28             par\_result.\hyperlink{class_parell__cromosomes_a4be1f5db491e742fa2ced6a22442c0a2}{creuament}(indpare.consultar\_parell\_cromosomes(i), indmare.
+      consultar\_parell\_cromosomes(i), cromo\_pare, cromo\_mare, punt\_tall, esp.\hyperlink{class_especie_aaa23d14e7e07335ff033d31e89e359ec}{consultar\_ln}(i));
+29             
+30             \hyperlink{class_individu_a9e3ff2f5573b349ddb98dff46b11e143}{adn}.push\_back(par\_result);
+31         
+32     \}
+33 
+34     pare = npare;
+35     mare = nmare;
+36 \}
+\end{DoxyCode}
+\index{Individu@{Individu}!consultar\+\_\+sexe@{consultar\+\_\+sexe}}
+\index{consultar\+\_\+sexe@{consultar\+\_\+sexe}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{consultar\+\_\+sexe() const }{consultar_sexe() const }}]{\setlength{\rightskip}{0pt plus 5cm}char Individu\+::consultar\+\_\+sexe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_individu_a06f4e5e857afbbcf9599d04c54a4f3a1}{}\label{class_individu_a06f4e5e857afbbcf9599d04c54a4f3a1}
+
+
+Consultora del sexe de l\textquotesingle{}individu. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implicit està inicialitzat. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es retorna el sexe de l\textquotesingle{}individu\+: X per noia, Y per noi (només pot ser un d\textquotesingle{}aquests dos). 
+\end{DoxyPostcond}
+
+
+Definició a la línia 39 del fitxer Individu.\+cc.
+
+
+\begin{DoxyCode}
+39                                    \{
+40     \textcolor{keywordflow}{return} \hyperlink{class_individu_a978281da58a84f7e4b8f3b9645cc6ec1}{sexe};
+41 \}
+\end{DoxyCode}
+\index{Individu@{Individu}!consultar\+\_\+pare@{consultar\+\_\+pare}}
+\index{consultar\+\_\+pare@{consultar\+\_\+pare}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{consultar\+\_\+pare() const }{consultar_pare() const }}]{\setlength{\rightskip}{0pt plus 5cm}string Individu\+::consultar\+\_\+pare (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_individu_a0807da1b89bb753f7bb92e1c39cefa44}{}\label{class_individu_a0807da1b89bb753f7bb92e1c39cefa44}
+
+
+Consultora del nom del pare de l\textquotesingle{}individu. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implicit està inicialitzat. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es retorna el nom del pare de l\textquotesingle{}individu. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 49 del fitxer Individu.\+cc.
+
+
+\begin{DoxyCode}
+49                                      \{
+50     \textcolor{keywordflow}{return} \hyperlink{class_individu_acd37349b1c7db6e07cd88eade7c622c0}{pare};
+51 \}
+\end{DoxyCode}
+\index{Individu@{Individu}!consultar\+\_\+mare@{consultar\+\_\+mare}}
+\index{consultar\+\_\+mare@{consultar\+\_\+mare}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{consultar\+\_\+mare() const }{consultar_mare() const }}]{\setlength{\rightskip}{0pt plus 5cm}string Individu\+::consultar\+\_\+mare (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_individu_a46a9823e9287c90d0ad58d494317ea65}{}\label{class_individu_a46a9823e9287c90d0ad58d494317ea65}
+
+
+Consultora del nom de la mare de l\textquotesingle{}individu. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implicit està inicialitzat. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es retorna el nom de la mare de l\textquotesingle{}individu. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 54 del fitxer Individu.\+cc.
+
+
+\begin{DoxyCode}
+54                                      \{
+55     \textcolor{keywordflow}{return} \hyperlink{class_individu_ae64702bb96cec3867674fb52d6a310e7}{mare};
+56 \}
+\end{DoxyCode}
+\index{Individu@{Individu}!escriure\+\_\+genotip@{escriure\+\_\+genotip}}
+\index{escriure\+\_\+genotip@{escriure\+\_\+genotip}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{escriure\+\_\+genotip() const }{escriure_genotip() const }}]{\setlength{\rightskip}{0pt plus 5cm}void Individu\+::escriure\+\_\+genotip (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_individu_a66e02b3d1a7e327ffb152c1e6193407a}{}\label{class_individu_a66e02b3d1a7e327ffb152c1e6193407a}
+
+
+Escriptora del genotip de l\textquotesingle{}individu. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implicit està inicialitzat. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}imprimeix pel canal de sortida el genoma de l\textquotesingle{}individu del paràmetre implicit. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 58 del fitxer Individu.\+cc.
+
+
+\begin{DoxyCode}
+58                                      \{
+59     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{class_individu_a9e3ff2f5573b349ddb98dff46b11e143}{adn}.size(); i++) \{
+60         \textcolor{keywordflow}{if} (i == 0)\{ \textcolor{comment}{// Escrivim primer els cromosomes sexuals}
+61             cout << \textcolor{stringliteral}{"  X:"};
+62             \hyperlink{class_individu_a9e3ff2f5573b349ddb98dff46b11e143}{adn}[i].escriure\_cromosoma(1);
+63         
+64             \textcolor{keywordflow}{if} (\hyperlink{class_individu_a978281da58a84f7e4b8f3b9645cc6ec1}{sexe} == \textcolor{charliteral}{'Y'}) cout << \textcolor{stringliteral}{"  Y:"};
+65             \textcolor{keywordflow}{else}  cout << \textcolor{stringliteral}{"  X:"};
+66             \hyperlink{class_individu_a9e3ff2f5573b349ddb98dff46b11e143}{adn}[i].escriure\_cromosoma(2);
+67         \}
+68         
+69         \textcolor{keywordflow}{else} \{
+70             cout << \textcolor{stringliteral}{"  "} << i << \textcolor{stringliteral}{".1:"};
+71             \hyperlink{class_individu_a9e3ff2f5573b349ddb98dff46b11e143}{adn}[i].escriure\_cromosoma(1);
+72             
+73             cout << \textcolor{stringliteral}{"  "} << i << \textcolor{stringliteral}{".2:"};
+74             \hyperlink{class_individu_a9e3ff2f5573b349ddb98dff46b11e143}{adn}[i].escriure\_cromosoma(2);
+75         \}
+76   
+77     \}
+78     
+79 \}
+\end{DoxyCode}
+\index{Individu@{Individu}!llegir\+\_\+individu@{llegir\+\_\+individu}}
+\index{llegir\+\_\+individu@{llegir\+\_\+individu}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{llegir\+\_\+individu(\+Especie esp)}{llegir_individu(Especie esp)}}]{\setlength{\rightskip}{0pt plus 5cm}void Individu\+::llegir\+\_\+individu (
+\begin{DoxyParamCaption}
+\item[{{\bf Especie}}]{esp}
+\end{DoxyParamCaption}
+)}\hypertarget{class_individu_ad0f73f2395d08a8d9de8604c2bede4d6}{}\label{class_individu_ad0f73f2395d08a8d9de8604c2bede4d6}
+
+
+Lectora de la informació d\textquotesingle{}un nou individu. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implicit està inicialitzat. L\textquotesingle{}explícit conté l\textquotesingle{}espècie a la que forma part l\textquotesingle{}individu que es vol llegir. Es preparen pel canal d\textquotesingle{}entrada el sexe i la informació genètica de l\textquotesingle{}individu a llegir. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}estableix al paràmetre implicit l\textquotesingle{}individu amb la informació llegida. Al no provenir de reproducció sexual, s\textquotesingle{}estableixen com a pares \char`\"{}\$\char`\"{}. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 82 del fitxer Individu.\+cc.
+
+
+\begin{DoxyCode}
+82                                          \{
+83     
+84     cin >> \hyperlink{class_individu_a978281da58a84f7e4b8f3b9645cc6ec1}{sexe};
+85 
+86     \textcolor{comment}{// Cromosomes sexuals}
+87         \hyperlink{class_parell__cromosomes}{Parell\_cromosomes} parell;
+88         parell.\hyperlink{class_parell__cromosomes_a63a4bff5f37c05ff7b6834ff48b4ceba}{llegir\_cromosomes\_sexuals}(esp.
+      \hyperlink{class_especie_a35b595c9f7dcf3e23b9c85278f72322e}{consultar\_lx}(), esp.\hyperlink{class_especie_afba7e27b8516600f74ff683b90e9fa40}{consultar\_ly}(), \hyperlink{class_individu_a978281da58a84f7e4b8f3b9645cc6ec1}{sexe});
+89         \hyperlink{class_individu_a9e3ff2f5573b349ddb98dff46b11e143}{adn}.push\_back(parell);
+90     
+91     
+92     \textcolor{comment}{// Cromosomes no sexuals}
+93     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i <= esp.\hyperlink{class_especie_ab8a394dfdea959e383645ae90d0086ca}{consultar\_n}(); i++)\{
+94         \hyperlink{class_parell__cromosomes}{Parell\_cromosomes} parell;
+95         parell.\hyperlink{class_parell__cromosomes_a5d96548d03bc22d40125a76c5654b3cd}{llegir\_cromosomes\_no\_sexuals}(esp.
+      \hyperlink{class_especie_aaa23d14e7e07335ff033d31e89e359ec}{consultar\_ln}(i));
+96         \hyperlink{class_individu_a9e3ff2f5573b349ddb98dff46b11e143}{adn}.push\_back(parell);
+97     \}
+98     
+99     \hyperlink{class_individu_ae64702bb96cec3867674fb52d6a310e7}{mare} = \textcolor{stringliteral}{"$"};
+100     \hyperlink{class_individu_acd37349b1c7db6e07cd88eade7c622c0}{pare} = \textcolor{stringliteral}{"$"};
+101 \}
+\end{DoxyCode}
+\index{Individu@{Individu}!consultar\+\_\+parell\+\_\+cromosomes@{consultar\+\_\+parell\+\_\+cromosomes}}
+\index{consultar\+\_\+parell\+\_\+cromosomes@{consultar\+\_\+parell\+\_\+cromosomes}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{consultar\+\_\+parell\+\_\+cromosomes(int i)}{consultar_parell_cromosomes(int i)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parell\+\_\+cromosomes} Individu\+::consultar\+\_\+parell\+\_\+cromosomes (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_individu_a1493ec6bfadc929b425bebb0c1a3a9c9}{}\label{class_individu_a1493ec6bfadc929b425bebb0c1a3a9c9}
+
+
+Consultora d\textquotesingle{}un parell de cromosomes. 
+
+\begin{DoxyPrecond}{Precondició}
+El paràmetre implicit està inicialitzat, l\textquotesingle{}explícit conté el parell de cromosomes que es vol. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es retorna el parell de cromosomes corresponent. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 44 del fitxer Individu.\+cc.
+
+
+\begin{DoxyCode}
+44                                                             \{
+45     \textcolor{keywordflow}{return} \hyperlink{class_individu_a9e3ff2f5573b349ddb98dff46b11e143}{adn}[i];
+46 \}
+\end{DoxyCode}
+
+
+\subsection{Documentació de les Dades Membre}
+\index{Individu@{Individu}!sexe@{sexe}}
+\index{sexe@{sexe}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{sexe}{sexe}}]{\setlength{\rightskip}{0pt plus 5cm}char Individu\+::sexe\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_individu_a978281da58a84f7e4b8f3b9645cc6ec1}{}\label{class_individu_a978281da58a84f7e4b8f3b9645cc6ec1}
+
+
+Representa el sexe de l\textquotesingle{}individu. 
+
+X per femella, Y per mascle. Només pot ser X o Y 
+
+Definició a la línia 86 del fitxer Individu.\+hh.
+
+\index{Individu@{Individu}!adn@{adn}}
+\index{adn@{adn}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{adn}{adn}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Parell\+\_\+cromosomes}$>$ Individu\+::adn\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_individu_a9e3ff2f5573b349ddb98dff46b11e143}{}\label{class_individu_a9e3ff2f5573b349ddb98dff46b11e143}
+
+
+Vector que conté les dades genètiques. 
+
+Les conté en dos subvectors de la classe \hyperlink{class_parell__cromosomes}{Parell\+\_\+cromosomes}. 
+
+Definició a la línia 90 del fitxer Individu.\+hh.
+
+\index{Individu@{Individu}!pare@{pare}}
+\index{pare@{pare}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{pare}{pare}}]{\setlength{\rightskip}{0pt plus 5cm}string Individu\+::pare\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_individu_acd37349b1c7db6e07cd88eade7c622c0}{}\label{class_individu_acd37349b1c7db6e07cd88eade7c622c0}
+
+
+Nom del pare de l\textquotesingle{}individu. 
+
+
+
+Definició a la línia 92 del fitxer Individu.\+hh.
+
+\index{Individu@{Individu}!mare@{mare}}
+\index{mare@{mare}!Individu@{Individu}}
+\subsubsection[{\texorpdfstring{mare}{mare}}]{\setlength{\rightskip}{0pt plus 5cm}string Individu\+::mare\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_individu_ae64702bb96cec3867674fb52d6a310e7}{}\label{class_individu_ae64702bb96cec3867674fb52d6a310e7}
+
+
+Nom de la mare de l\textquotesingle{}individu. 
+
+
+
+Definició a la línia 94 del fitxer Individu.\+hh.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir dels següents fitxers\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_individu_8hh}{Individu.\+hh}\item 
+\hyperlink{_individu_8cc}{Individu.\+cc}\end{DoxyCompactItemize}
